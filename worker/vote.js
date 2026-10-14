@@ -1,6 +1,6 @@
 const REPO = 'kristjan-jonsson/skrifstofulif';
 const ID_RE = /^\d{4}-\d{2}-\d{2}(-\d+)?$/;
-const VOTES = ['up', 'down'];
+const VOTES = ['up', 'down', 'none'];
 
 export default {
   async fetch(request, env) {
@@ -19,7 +19,8 @@ export default {
     try { body = await request.json(); } catch { body = null; }
     const id = body && body.id;
     const vote = body && body.vote;
-    if (typeof id !== 'string' || !ID_RE.test(id) || !VOTES.includes(vote)) {
+    const prev = (body && body.prev) || 'none';
+    if (typeof id !== 'string' || !ID_RE.test(id) || !VOTES.includes(vote) || !VOTES.includes(prev) || vote === prev) {
       return new Response('Bad request', { status: 400, headers: cors });
     }
 
@@ -31,7 +32,7 @@ export default {
         'X-GitHub-Api-Version': '2022-11-28',
         'User-Agent': 'skrifstofulif-vote',
       },
-      body: JSON.stringify({ event_type: 'vote', client_payload: { id, vote } }),
+      body: JSON.stringify({ event_type: 'vote', client_payload: { id, vote, prev } }),
     });
     if (!res.ok) console.log('GitHub dispatch failed', res.status, await res.text());
     return new Response(null, { status: res.ok ? 204 : 502, headers: cors });

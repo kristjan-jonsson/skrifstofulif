@@ -185,23 +185,25 @@
     $('count-down').textContent = v.down || 0;
     $('vote-up').setAttribute('aria-pressed', mine === 'up' ? 'true' : 'false');
     $('vote-down').setAttribute('aria-pressed', mine === 'down' ? 'true' : 'false');
-    $('vote-up').disabled = $('vote-down').disabled = !!mine;
   }
 
-  function castVote(vote) {
+  // Smellt á annan hnapp = skipta um atkvæði, smellt aftur á sama = draga atkvæði til baka
+  function castVote(clicked) {
     const k = key(comics[idx]);
-    if (myVote(k)) return;
-    try { localStorage.setItem('vote:' + k, vote); } catch {}
-    votes[k] = votes[k] || {};
-    votes[k][vote] = (votes[k][vote] || 0) + 1;
+    const prev = myVote(k) || 'none';
+    const vote = clicked === prev ? 'none' : clicked;
+    try {
+      if (vote === 'none') localStorage.removeItem('vote:' + k);
+      else localStorage.setItem('vote:' + k, vote);
+    } catch {}
+    const v = votes[k] = votes[k] || {};
+    if (prev !== 'none') v[prev] = Math.max(0, (v[prev] || 0) - 1);
+    if (vote !== 'none') v[vote] = (v[vote] || 0) + 1;
     renderVotes();
-    // Ef localStorage er ekki aðgengilegt: læsa hnöppum samt fyrir þessa heimsókn
-    $('vote-up').disabled = $('vote-down').disabled = true;
-    $('vote-' + vote).setAttribute('aria-pressed', 'true');
     fetch(VOTE_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: k, vote })
+      body: JSON.stringify({ id: k, vote, prev })
     }).catch(() => {});
   }
 
