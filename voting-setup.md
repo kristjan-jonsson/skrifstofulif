@@ -7,8 +7,8 @@ The site is static GitHub Pages (`index.html` + `comics.json`), so a browser can
 3. A GitHub Action handles the event and commits the updated counts to `votes.json` on a separate `votes` branch.
 
 ```
-browser ──POST {id, vote}──▶ Cloudflare Worker ──repository_dispatch──▶ GitHub Action
-                                                                          │ jq: votes[id][vote]++
+browser ──POST {id, vote, prev}──▶ Cloudflare Worker ──repository_dispatch──▶ GitHub Action
+                                                                          │ jq: votes[id][prev]--, votes[id][vote]++
                                                                           ▼ commit → branch `votes`
 browser ◀── GET raw.githubusercontent.com/kristjan-jonsson/skrifstofulif/votes/votes.json
 ```
@@ -54,7 +54,7 @@ ALLOWED_ORIGIN = "https://skrifstofulif.oskasteinar.is"
 ```js
 const REPO = 'kristjan-jonsson/skrifstofulif';
 const ID_RE = /^\d{4}-\d{2}-\d{2}(-\d+)?$/;
-const VOTES = ['up', 'down'];
+const VOTES = ['up', 'down', 'none'];
 
 export default {
   async fetch(request, env) {
@@ -73,7 +73,8 @@ export default {
     try { body = await request.json(); } catch { body = null; }
     const id = body && body.id;
     const vote = body && body.vote;
-    if (typeof id !== 'string' || !ID_RE.test(id) || !VOTES.includes(vote)) {
+    const prev = (body && body.prev) || 'none';
+    if (typeof id !== 'string' || !ID_RE.test(id) || !VOTES.includes(vote) || !VOTES.includes(prev) || vote === prev) {
       return new Response('Bad request', { status: 400, headers: cors });
     }
 
@@ -85,7 +86,7 @@ export default {
         'X-GitHub-Api-Version': '2022-11-28',
         'User-Agent': 'skrifstofulif-vote',
       },
-      body: JSON.stringify({ event_type: 'vote', client_payload: { id, vote } }),
+      body: JSON.stringify({ event_type: 'vote', client_payload: { id, vote, prev } }),
     });
     if (!res.ok) console.log('GitHub dispatch failed', res.status, await res.text());
     return new Response(null, { status: res.ok ? 204 : 502, headers: cors });
@@ -134,9 +135,9 @@ curl -i -X POST "$URL" -H 'Origin: https://skrifstofulif.oskasteinar.is' -d '{"i
 
 ## Part B: GitHub Action `.github/workflows/vote.yml` (new)
 - Triggers on `repository_dispatch: types: [vote]`, with `permissions: contents: write`.
-- `client_payload.id` and `.vote` go in through `env:` and are never interpolated into `run:`, which prevents script injection. The step validates them again with the same regex and the up/down check.
+- `client_payload.id`, `.vote` and `.prev` go in through `env:` and are never interpolated into `run:`, which prevents script injection. The step validates them again with the same regex, checks that `vote` and `prev` are each `up`, `down` or `none`, and that they differ. A missing `prev` counts as `none`.
 - Checks out the `votes` branch, or creates it as an orphan branch with `{}` if it doesn't exist yet.
-- Runs `jq --arg id "$ID" --arg v "$VOTE" '.[$id][$v] = ((.[$id][$v] // 0) + 1)'`, then commits as github-actions[bot].
+- Runs `jq` to subtract 1 from `prev` (never below 0) and add 1 to `vote`, skipping whichever is `none`, then commits as github-actions[bot].
 - Pushes in a **retry loop**: `git pull --rebase` and push, up to 5 times, re-applying the increment on conflict. I'm not using a concurrency group, because GitHub drops extra pending runs in a group, which would lose votes.
 
 ## Part C: `index.html` (edit)
