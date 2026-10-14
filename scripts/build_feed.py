@@ -18,11 +18,11 @@ def key(c):
 
 
 def pub_date(c):
-    # Engin klukkustund í comics.json: 06:00 UTC, auk mínútu fyrir hverja aukaskrýtlu sama dag (-2, -3, …)
+    # Engin klukkustund í comics.json: birtingartíminn 07:20 (Ísland = UTC), auk mínútu fyrir hverja aukaskrýtlu sama dag (-2, -3, …)
     y, m, d = map(int, c['date'].split('-'))
     suffix = key(c)[len(c['date']):].lstrip('-')
     n = int(suffix) if suffix.isdigit() else 0
-    return datetime(y, m, d, 6, 0, tzinfo=timezone.utc) + timedelta(minutes=n)
+    return datetime(y, m, d, 7, 20, tzinfo=timezone.utc) + timedelta(minutes=n)
 
 
 def item(c):
@@ -58,6 +58,7 @@ def main(src, dst):
     <link>{SITE}</link>
     <description>{escape(DESCRIPTION)}</description>
     <language>is</language>
+    <copyright>© 2026 Kristján Jónsson, CC BY 4.0</copyright>
     <lastBuildDate>{updated}</lastBuildDate>
     <atom:link href="{SITE}feed.xml" rel="self" type="application/rss+xml"/>
 {items}
