@@ -43,6 +43,10 @@ https://github.com/kristjan-jonsson/skrifstofulif/blob/votes/votes.json
 
 Uppsetning er lýst í [voting-setup.md](voting-setup.md). Hnapparnir birtast ekki fyrr en `VOTE_URL` í `index.html` hefur verið stillt.
 
+## RSS
+
+Straumurinn `feed.xml` (https://skrifstofulif.oskasteinar.is/feed.xml) er búinn til sjálfkrafa úr `comics.json` í `pages.yml` við hverja birtingu, með `scripts/build_feed.py`. Hann er ekki geymdur í git. Nýjustu 50 skrýtlurnar eru með.
+
 ## Leyfi
 
 © 2026 Kristján Jónsson. Skrýtlurnar og kóðinn eru gefin út undir [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). Þér er frjálst að deila og aðlaga efnið, svo lengi sem þú getur höfundar.

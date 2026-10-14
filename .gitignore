@@ -11,3 +11,6 @@
 worker/.dev.vars
 .wrangler/
 node_modules/
+
+# RSS-straumur, búinn til í pages.yml
+feed.xml

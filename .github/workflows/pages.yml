@@ -23,6 +23,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Build RSS feed
+        run: python3 scripts/build_feed.py comics.json feed.xml
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
