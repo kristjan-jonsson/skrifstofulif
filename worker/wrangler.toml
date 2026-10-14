@@ -3,4 +3,4 @@ main = "vote.js"
 compatibility_date = "2025-09-01"
 
 [vars]
-ALLOWED_ORIGIN = "https://kristjan-jonsson.github.io"
+ALLOWED_ORIGIN = "https://skrifstofulif.oskasteinar.is"

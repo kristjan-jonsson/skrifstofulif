@@ -47,7 +47,7 @@ main = "vote.js"
 compatibility_date = "2025-09-01"
 
 [vars]
-ALLOWED_ORIGIN = "https://kristjan-jonsson.github.io"
+ALLOWED_ORIGIN = "https://skrifstofulif.oskasteinar.is"
 ```
 
 `worker/vote.js`
@@ -112,11 +112,11 @@ The secret takes effect immediately, with no redeploy. You can see it under Dash
 ```bash
 URL=https://skrifstofulif-vote.<subdomain>.workers.dev
 # Should return 204:
-curl -i -X POST "$URL" -H 'Origin: https://kristjan-jonsson.github.io' \
+curl -i -X POST "$URL" -H 'Origin: https://skrifstofulif.oskasteinar.is' \
      -H 'Content-Type: application/json' -d '{"id":"2026-10-13","vote":"up"}'
 # Should return 403 (wrong origin) and 400 (bad id):
 curl -i -X POST "$URL" -H 'Origin: https://evil.example' -d '{"id":"2026-10-13","vote":"up"}'
-curl -i -X POST "$URL" -H 'Origin: https://kristjan-jonsson.github.io' -d '{"id":"x; rm -rf","vote":"up"}'
+curl -i -X POST "$URL" -H 'Origin: https://skrifstofulif.oskasteinar.is' -d '{"id":"x; rm -rf","vote":"up"}'
 ```
 - A 204 means GitHub accepted the event. It only *does* anything once `vote.yml` is on `main` (Part B), because `repository_dispatch` only runs workflows on the default branch.
 - If you get a 502, run `npx wrangler tail` to see GitHub's error. It's usually a token with the wrong repo or permission.
