@@ -57,9 +57,6 @@
   .btn:hover:not([disabled]) { border-color: var(--ink); }
   .btn[disabled] { opacity: .4; cursor: default; }
   .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-  .transcript { margin-top: 16px; color: var(--muted); font-size: 14px; }
-  .transcript summary { cursor: pointer; }
-  .transcript ol { padding-left: 20px; }
 
   /* Placeholder */
   .placeholder { text-align: center; padding: 32px 16px 40px; }
@@ -74,11 +71,7 @@
   .placeholder h2 { margin: 0 0 8px; font-size: 24px; }
   .placeholder p { margin: 0 auto; max-width: 52ch; color: var(--muted); }
 
-  .cast { margin-top: 40px; }
-  .cast h2, .archive h2 { font-size: 18px; margin: 0 0 12px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
-  .cast ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
-  .cast li { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; font-size: 14px; }
-  .cast b { display: block; font-size: 15px; }
+  .archive h2 { font-size: 18px; margin: 0 0 12px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
   .archive { margin-top: 40px; }
   .archive ul { list-style: none; padding: 0; margin: 0; columns: 2 260px; }
   .archive li { padding: 4px 0; break-inside: avoid; }
@@ -112,10 +105,6 @@
       <span class="strip-date" id="date"></span>
     </div>
     <a id="imglink" target="_blank" rel="noopener"><img id="img" alt=""></a>
-    <details class="transcript" id="transcript" hidden>
-      <summary>Texti skrýtlunnar</summary>
-      <ol id="panels"></ol>
-    </details>
   </figure>
 
   <nav class="nav" id="nav" hidden aria-label="Fletta skrýtlum">
@@ -131,17 +120,6 @@
     <ul id="archive-list"></ul>
   </section>
 
-  <section class="cast">
-    <h2>Persónur</h2>
-    <ul>
-      <li><b>Bjarni yfirmaður</b>Stefnumótun og tískuorð. Skilur lítið af því sem hann ákveður.</li>
-      <li><b>Gunnar</b>Kaldhæðinn og þreyttur. Segir það sem enginn vill heyra.</li>
-      <li><b>Kári hrafn</b>Ráðgjafi. Rukkar fyrir augljósa hluti, helst í mörgum tímabilum.</li>
-      <li><b>Snæfríður kisa</b>Stefnir á yfirarkitekt. Vaknar aðeins til að eigna sér heiðurinn.</li>
-      <li><b>Hrólfur sauður</b>Mannauðsmál. Vill eyðublað í þríriti fyrir allt.</li>
-      <li><b>Lundi nemi</b>Ofurmetnaðarfullur. Tekur að sér allt sem enginn vill og skrifar fundargerðir.</li>
-    </ul>
-  </section>
 </main>
 
 <footer>
@@ -173,14 +151,6 @@
     $('img').src = c.image;
     $('img').alt = c.alt || `Skrifstofulífið ${fmtDate(c.date)}: ${c.title || ''}`;
     $('imglink').href = c.image;
-    const ol = $('panels');
-    ol.replaceChildren();
-    (c.panels || []).forEach(p => {
-      const li = document.createElement('li');
-      li.textContent = p;
-      ol.appendChild(li);
-    });
-    $('transcript').hidden = !(c.panels && c.panels.length);
     $('first').disabled = $('prev').disabled = i === 0;
     $('next').disabled = $('latest').disabled = i === comics.length - 1;
     $('random').disabled = comics.length < 2;
