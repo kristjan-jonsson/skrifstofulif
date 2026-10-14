@@ -36,6 +36,13 @@ git push origin main
 
 GitHub Pages uppfærir síðu sjálfkrafa innan 1–2 mínútna.
 
+## Atkvæði (👍/👎)
+
+Lesendur geta gefið hverri skrýtlu 👍 eða 👎 (eitt atkvæði á skrýtlu í hverjum vafra). Atkvæðið fer í gegnum Cloudflare Worker (`worker/`) sem ræsir GitHub Action (`.github/workflows/vote.yml`). Hún uppfærir `votes.json` á greininni `votes`:
+https://github.com/kristjan-jonsson/skrifstofulif/blob/votes/votes.json
+
+Uppsetning er lýst í [voting-setup.md](voting-setup.md). Hnapparnir birtast ekki fyrr en `VOTE_URL` í `index.html` hefur verið stillt.
+
 ## Leyfi
 
 © 2026 Kristján Jónsson. Skrýtlurnar og kóðinn eru gefin út undir [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). Þér er frjálst að deila og aðlaga efnið, svo lengi sem þú getur höfundar.

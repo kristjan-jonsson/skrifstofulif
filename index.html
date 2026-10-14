@@ -57,6 +57,8 @@
   .btn:hover:not([disabled]) { border-color: var(--ink); }
   .btn[disabled] { opacity: .4; cursor: default; }
   .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .votes { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+  .votes .btn[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); opacity: 1; font-weight: 700; }
 
   /* Placeholder */
   .placeholder { text-align: center; padding: 32px 16px 40px; }
@@ -105,6 +107,10 @@
       <span class="strip-date" id="date"></span>
     </div>
     <a id="imglink" target="_blank" rel="noopener"><img id="img" alt=""></a>
+    <div class="votes" id="votes" hidden>
+      <button class="btn" id="vote-up" aria-pressed="false" aria-label="Fyndið">👍 <span id="count-up"></span></button>
+      <button class="btn" id="vote-down" aria-pressed="false" aria-label="Ekki fyndið">👎 <span id="count-down"></span></button>
+    </div>
   </figure>
 
   <nav class="nav" id="nav" hidden aria-label="Fletta skrýtlum">
@@ -133,6 +139,11 @@
   const $ = id => document.getElementById(id);
   const key = c => c.id || c.date;
 
+  // Slóð Cloudflare Worker (sjá voting-setup.md). Tómt = atkvæðahnappar faldir.
+  const VOTE_URL = '';
+  const VOTES_JSON = 'https://raw.githubusercontent.com/kristjan-jonsson/skrifstofulif/votes/votes.json';
+  let votes = {};
+
   function fmtDate(iso) {
     const [y, m, d] = iso.split('-').map(Number);
     const dt = new Date(Date.UTC(y, m - 1, d));
@@ -158,6 +169,40 @@
       a.setAttribute('aria-current', a.dataset.key === key(c) ? 'true' : 'false'));
     if (location.hash.slice(1) !== key(c)) history.replaceState(null, '', '#' + key(c));
     document.title = `Skrifstofulífið – ${c.title || fmtDate(c.date)}`;
+    renderVotes();
+  }
+
+  function myVote(k) {
+    try { return localStorage.getItem('vote:' + k); } catch { return null; }
+  }
+
+  function renderVotes() {
+    if (!VOTE_URL || idx < 0) return;
+    const k = key(comics[idx]);
+    const v = votes[k] || {};
+    const mine = myVote(k);
+    $('count-up').textContent = v.up || 0;
+    $('count-down').textContent = v.down || 0;
+    $('vote-up').setAttribute('aria-pressed', mine === 'up' ? 'true' : 'false');
+    $('vote-down').setAttribute('aria-pressed', mine === 'down' ? 'true' : 'false');
+    $('vote-up').disabled = $('vote-down').disabled = !!mine;
+  }
+
+  function castVote(vote) {
+    const k = key(comics[idx]);
+    if (myVote(k)) return;
+    try { localStorage.setItem('vote:' + k, vote); } catch {}
+    votes[k] = votes[k] || {};
+    votes[k][vote] = (votes[k][vote] || 0) + 1;
+    renderVotes();
+    // Ef localStorage er ekki aðgengilegt: læsa hnöppum samt fyrir þessa heimsókn
+    $('vote-up').disabled = $('vote-down').disabled = true;
+    $('vote-' + vote).setAttribute('aria-pressed', 'true');
+    fetch(VOTE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: k, vote })
+    }).catch(() => {});
   }
 
   function renderArchive() {
@@ -192,6 +237,8 @@
     let r; do { r = Math.floor(Math.random() * comics.length); } while (comics.length > 1 && r === idx);
     show(r);
   };
+  $('vote-up').onclick = () => castVote('up');
+  $('vote-down').onclick = () => castVote('down');
   window.addEventListener('hashchange', fromHash);
   document.addEventListener('keydown', e => {
     if (!comics.length) return;
@@ -211,6 +258,19 @@
       $('nav').hidden = false;
       renderArchive();
       fromHash();
+      if (VOTE_URL) {
+        $('votes').hidden = false;
+        fetch(VOTES_JSON, { cache: 'no-cache' })
+          .then(r => r.ok ? r.json() : {})
+          .catch(() => ({}))
+          .then(data => {
+            // Halda staðbundnum atkvæðum sem eru ekki enn komin í skrána
+            data = data || {};
+            Object.keys(votes).forEach(k => { if (!data[k]) data[k] = votes[k]; });
+            votes = data;
+            renderVotes();
+          });
+      }
     });
 })();
 </script>

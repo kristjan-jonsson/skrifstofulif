@@ -6,3 +6,8 @@
 .vscode/
 .idea/
 *.swp
+
+# Cloudflare Worker (staðbundin leyndarmál)
+worker/.dev.vars
+.wrangler/
+node_modules/

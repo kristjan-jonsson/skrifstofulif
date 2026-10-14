@@ -1,0 +1,63 @@
+name: Record vote
+
+on:
+  repository_dispatch:
+    types: [vote]
+
+permissions:
+  contents: write
+
+jobs:
+  vote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate payload
+        env:
+          ID: ${{ github.event.client_payload.id }}
+          VOTE: ${{ github.event.client_payload.vote }}
+        run: |
+          [[ "$ID" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}(-[0-9]+)?$ ]] || { echo "Bad id"; exit 1; }
+          [[ "$VOTE" == up || "$VOTE" == down ]] || { echo "Bad vote"; exit 1; }
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Increment votes.json on the votes branch
+        env:
+          ID: ${{ github.event.client_payload.id }}
+          VOTE: ${{ github.event.client_payload.vote }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin votes >/dev/null; then
+            git checkout -B votes origin/votes
+          else
+            git checkout --orphan votes
+            git rm -rf --quiet .
+            echo '{}' > votes.json
+            git add votes.json
+            git commit -m "Búa til votes.json"
+          fi
+
+          bump() {
+            [ -f votes.json ] || echo '{}' > votes.json
+            jq --arg id "$ID" --arg v "$VOTE" \
+              '.[$id][$v] = ((.[$id][$v] // 0) + 1)' votes.json > votes.tmp
+            mv votes.tmp votes.json
+            git add votes.json
+            git commit -m "Atkvæði: $ID $VOTE"
+          }
+
+          for attempt in 1 2 3 4 5; do
+            if git ls-remote --exit-code --heads origin votes >/dev/null; then
+              git fetch origin votes
+              git reset --hard origin/votes
+            fi
+            bump
+            if git push origin votes; then exit 0; fi
+            echo "Push failed (attempt $attempt), retrying"
+            sleep $((RANDOM % 5 + 1))
+          done
+          exit 1
