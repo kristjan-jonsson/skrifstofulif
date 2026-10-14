@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skrifstofulífið</title>
+<meta name="description" content="Dagleg skrýtla úr skrifstofulífinu – ný myndasaga alla daga.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='4' y='10' width='56' height='44' rx='6' fill='%23f4c430' stroke='%23222' stroke-width='4'/><path d='M22 10v44M42 10v44' stroke='%23222' stroke-width='4'/></svg>">
+<style>
+  :root {
+    --bg: #f6f3ec;
+    --paper: #ffffff;
+    --ink: #1d1d1f;
+    --muted: #6b6760;
+    --line: #d9d3c7;
+    --accent: #c8102e;
+    --accent-ink: #ffffff;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17171a; --paper: #222226; --ink: #ecebe8; --muted: #a29e96;
+      --line: #36363b; --accent: #ff5a6e; --accent-ink: #17171a;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17171a; --paper: #222226; --ink: #ecebe8; --muted: #a29e96;
+    --line: #36363b; --accent: #ff5a6e; --accent-ink: #17171a;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 32px 0 16px; border-bottom: 3px solid var(--ink); }
+  .masthead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  h1 { margin: 0; font-size: clamp(28px, 6vw, 48px); letter-spacing: .04em; font-weight: 900; line-height: 1; }
+  .tag { color: var(--muted); font-size: 15px; }
+  main { padding: 24px 0 48px; }
+  .strip {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: var(--shadow); padding: 16px; margin: 0;
+  }
+  .strip-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .strip-title { margin: 0; font-size: 20px; }
+  .strip-date { color: var(--muted); font-size: 14px; }
+  .strip img { display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
+  .nav { display: flex; gap: 8px; justify-content: center; margin: 16px 0 0; flex-wrap: wrap; }
+  .btn {
+    appearance: none; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px; font: inherit; font-size: 14px; cursor: pointer; text-decoration: none;
+  }
+  .btn:hover:not([disabled]) { border-color: var(--ink); }
+  .btn[disabled] { opacity: .4; cursor: default; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .transcript { margin-top: 16px; color: var(--muted); font-size: 14px; }
+  .transcript summary { cursor: pointer; }
+  .transcript ol { padding-left: 20px; }
+
+  /* Placeholder */
+  .placeholder { text-align: center; padding: 32px 16px 40px; }
+  .panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 720px; margin: 0 auto 24px; }
+  .panel {
+    aspect-ratio: 4 / 3; border: 3px solid var(--ink); border-radius: 4px; background: var(--bg);
+    display: grid; place-items: center; font-weight: 800; font-size: clamp(18px, 4vw, 32px); color: var(--muted);
+  }
+  .panel:nth-child(2) { animation: blink 2.4s ease-in-out infinite; }
+  @keyframes blink { 50% { opacity: .35; } }
+  @media (prefers-reduced-motion: reduce) { .panel:nth-child(2) { animation: none; } }
+  .placeholder h2 { margin: 0 0 8px; font-size: 24px; }
+  .placeholder p { margin: 0 auto; max-width: 52ch; color: var(--muted); }
+
+  .cast { margin-top: 40px; }
+  .cast h2, .archive h2 { font-size: 18px; margin: 0 0 12px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  .cast ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .cast li { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; font-size: 14px; }
+  .cast b { display: block; font-size: 15px; }
+  .archive { margin-top: 40px; }
+  .archive ul { list-style: none; padding: 0; margin: 0; columns: 2 260px; }
+  .archive li { padding: 4px 0; break-inside: avoid; }
+  .archive a { color: var(--ink); }
+  .archive a[aria-current="true"] { color: var(--accent); font-weight: 700; }
+  .archive time { color: var(--muted); font-size: 13px; margin-right: 6px; }
+  footer { border-top: 1px solid var(--line); padding: 16px 0 32px; color: var(--muted); font-size: 13px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap masthead">
+    <h1>SKRIFSTOFULÍFIÐ</h1>
+    <span class="tag">Dagleg skrýtla · ný myndasaga alla morgna kl. 07:20</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="empty" class="strip placeholder" hidden>
+    <div class="panels" aria-hidden="true">
+      <div class="panel">…</div><div class="panel">?</div><div class="panel">!</div>
+    </div>
+    <h2>Fyrsta skrýtlan er í vinnslu</h2>
+    <p>Bjarni er enn að skilgreina stefnumótun skrýtlunnar, Hrólfur bíður eftir eyðublaði í þríriti og Snæfríður sefur á lyklaborðinu. Kíktu aftur í fyrramálið.</p>
+  </section>
+
+  <figure id="strip" class="strip" hidden>
+    <div class="strip-head">
+      <h2 class="strip-title" id="title"></h2>
+      <span class="strip-date" id="date"></span>
+    </div>
+    <a id="imglink" target="_blank" rel="noopener"><img id="img" alt=""></a>
+    <details class="transcript" id="transcript" hidden>
+      <summary>Texti skrýtlunnar</summary>
+      <ol id="panels"></ol>
+    </details>
+  </figure>
+
+  <nav class="nav" id="nav" hidden aria-label="Fletta skrýtlum">
+    <button class="btn" id="first">« Fyrsta</button>
+    <button class="btn" id="prev">‹ Fyrri</button>
+    <button class="btn" id="random">Handahófs</button>
+    <button class="btn" id="next">Næsta ›</button>
+    <button class="btn primary" id="latest">Nýjasta »</button>
+  </nav>
+
+  <section class="archive" id="archive" hidden>
+    <h2>Safnið</h2>
+    <ul id="archive-list"></ul>
+  </section>
+
+  <section class="cast">
+    <h2>Persónur</h2>
+    <ul>
+      <li><b>Bjarni yfirmaður</b>Stefnumótun og tískuorð. Skilur lítið af því sem hann ákveður.</li>
+      <li><b>Gunnar</b>Kaldhæðinn og þreyttur. Segir það sem enginn vill heyra.</li>
+      <li><b>Kári hrafn</b>Ráðgjafi. Rukkar fyrir augljósa hluti, helst í mörgum tímabilum.</li>
+      <li><b>Snæfríður kisa</b>Stefnir á yfirarkitekt. Vaknar aðeins til að eigna sér heiðurinn.</li>
+      <li><b>Hrólfur sauður</b>Mannauðsmál. Vill eyðublað í þríriti fyrir allt.</li>
+      <li><b>Lundi nemi</b>Ofurmetnaðarfullur. Tekur að sér allt sem enginn vill og skrifar fundargerðir.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Skrifstofulífið · Allar persónur eru uppspuni og öll líkindi við raunverulega fundi eru tilviljun.</div>
+</footer>
+
+<script>
+(function () {
+  const DAYS = ['sunnudagur','mánudagur','þriðjudagur','miðvikudagur','fimmtudagur','föstudagur','laugardagur'];
+  const MONTHS = ['janúar','febrúar','mars','apríl','maí','júní','júlí','ágúst','september','október','nóvember','desember'];
+  const $ = id => document.getElementById(id);
+
+  function fmtDate(iso) {
+    const [y, m, d] = iso.split('-').map(Number);
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    return `${DAYS[dt.getUTCDay()]} ${d}. ${MONTHS[m - 1]} ${y}`;
+  }
+
+  let comics = [];
+  let idx = -1;
+
+  function show(i) {
+    if (i < 0 || i >= comics.length) return;
+    idx = i;
+    const c = comics[i];
+    $('title').textContent = c.title || 'Skrifstofulífið';
+    $('date').textContent = fmtDate(c.date);
+    $('img').src = c.image;
+    $('img').alt = c.alt || `Skrifstofulífið ${fmtDate(c.date)}: ${c.title || ''}`;
+    $('imglink').href = c.image;
+    const ol = $('panels');
+    ol.replaceChildren();
+    (c.panels || []).forEach(p => {
+      const li = document.createElement('li');
+      li.textContent = p;
+      ol.appendChild(li);
+    });
+    $('transcript').hidden = !(c.panels && c.panels.length);
+    $('first').disabled = $('prev').disabled = i === 0;
+    $('next').disabled = $('latest').disabled = i === comics.length - 1;
+    $('random').disabled = comics.length < 2;
+    document.querySelectorAll('#archive-list a').forEach(a =>
+      a.setAttribute('aria-current', a.dataset.date === c.date ? 'true' : 'false'));
+    if (location.hash.slice(1) !== c.date) history.replaceState(null, '', '#' + c.date);
+    document.title = `Skrifstofulífið – ${c.title || fmtDate(c.date)}`;
+  }
+
+  function renderArchive() {
+    const ul = $('archive-list');
+    ul.replaceChildren();
+    comics.slice().reverse().forEach(c => {
+      const li = document.createElement('li');
+      const t = document.createElement('time');
+      t.dateTime = c.date;
+      t.textContent = c.date;
+      const a = document.createElement('a');
+      a.href = '#' + c.date;
+      a.dataset.date = c.date;
+      a.textContent = c.title || fmtDate(c.date);
+      li.append(t, a);
+      ul.appendChild(li);
+    });
+    $('archive').hidden = comics.length < 2;
+  }
+
+  function fromHash() {
+    const h = location.hash.slice(1);
+    const i = comics.findIndex(c => c.date === h);
+    show(i >= 0 ? i : comics.length - 1);
+  }
+
+  $('first').onclick = () => show(0);
+  $('prev').onclick = () => show(idx - 1);
+  $('next').onclick = () => show(idx + 1);
+  $('latest').onclick = () => show(comics.length - 1);
+  $('random').onclick = () => {
+    let r; do { r = Math.floor(Math.random() * comics.length); } while (comics.length > 1 && r === idx);
+    show(r);
+  };
+  window.addEventListener('hashchange', fromHash);
+  document.addEventListener('keydown', e => {
+    if (!comics.length) return;
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
+
+  fetch('comics.json', { cache: 'no-cache' })
+    .then(r => r.ok ? r.json() : { comics: [] })
+    .catch(() => ({ comics: [] }))
+    .then(data => {
+      comics = (data.comics || [])
+        .filter(c => c && c.date && c.image)
+        .sort((a, b) => a.date.localeCompare(b.date));
+      if (!comics.length) { $('empty').hidden = false; return; }
+      $('strip').hidden = false;
+      $('nav').hidden = false;
+      renderArchive();
+      fromHash();
+    });
+})();
+</script>
+</body>
+</html>
