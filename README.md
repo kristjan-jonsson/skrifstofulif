@@ -1,31 +1,61 @@
 # Skrifstofulífið
 
-Dagleg skrýtla (3 ramma myndasaga) birt á GitHub Pages:
+Dagleg skrýtla (3-ramma myndasaga) birt á GitHub Pages:
 https://kristjan-jonsson.github.io/skrifstofulif/
 
-Síðan er hrein statísk HTML-síða (engin build). `index.html` les `comics.json` og birtir nýjustu skrýtluna, með flettingu, handahófsvali, safni og varanlegum tenglum (`#YYYY-MM-DD`). Ef `comics.json` er tómt birtist biðsíða.
+Síðan er hreinn statísk HTML-síða án build-ferlis. `index.html` les `comics.json` og birtir nýjustu skrýtlu, með flettingu, handahófsvali, safni og varanlegum tenglum (`#YYYY-MM-DD`).
 
-## Hvernig ný skrýtla er birt (fyrir daglegu rútínuna)
+## Hvernig ný skrýtla er birt
 
 1. Vista myndina sem `comics/YYYY-MM-DD.png` (t.d. `comics/2026-10-15.png`).
-2. Bæta færslu aftast í `comics` fylkið í `comics.json`:
+2. Bæta færslu aftast í `comics`-listann í `comics.json`:
 
-   ```json
-   {
-     "date": "2026-10-15",
-     "title": "Stuttur titill",
-     "image": "comics/2026-10-15.png",
-     "alt": "Ein setning sem lýsir myndinni",
-     "panels": [
-       "Rammi 1 – Bjarni: „…“",
-       "Rammi 2 – Gunnar: „…“",
-       "Rammi 3 – Snæfríður: „…“"
-     ]
-   }
-   ```
+```json
+{
+  "date": "2026-10-15",
+  "title": "Stuttur titill",
+  "image": "comics/2026-10-15.png",
+  "alt": "Ein setning sem lýsir myndinni",
+  "panels": [
+    "Rammi 1 – Bjarni: „…“",
+    "Rammi 2 – Gunnar: „…“",
+    "Rammi 3 – Snæfríður: „…“"
+  ]
+}
+```
 
-   `date`, `title` og `image` eru nauðsynleg; `alt`, `panels` og `id` valkvæð. Ef fleiri en ein skrýtla er sama dag, gefðu þeim aukalegu `id` eins og `2026-10-13-2` (notað í varanlega tenglinum `#id`) og vistaðu myndina undir sama nafni. Röðin skiptir ekki máli – síðan raðar eftir `date`. Ef færsla með sömu dagsetningu er til, skipta henni út frekar en að bæta við.
-3. Commit og push á `main`, t.d. `git commit -m "Skrýtla 2026-10-15: Stuttur titill"`. GitHub Pages uppfærist innan 1–2 mínútna.
+`date`, `title` og `image` eru nauðsynleg; `alt`, `panels` og `id` eru valfrjáls. Ef fleiri en ein skrýtla er sama dag, gefðu þeim aukalegu `id` eins og `2026-10-13-2` (notað í varanlegum tenglum).
 
-Push með PAT: `git push https://x-access-token:${GITHUB_TOKEN}@github.com/kristjan-jonsson/skrifstofulif.git main`
-(PAT þarf aðeins *Contents: Read and write* á þessari einu geymslu.)
+3. Commit-a og push-a á `main`:
+
+```bash
+git add .
+git commit -m "Skrýtla 2026-10-15: Stuttur titill"
+git push origin main
+```
+
+GitHub Pages uppfærir síðu sjálfkrafa innan 1–2 mínútna.
+
+## Leyfi
+
+Þetta verkefni er gefið út undir MIT-leyfi.
+
+Copyright (c) 2026 Kristján Jónsson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
