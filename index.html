@@ -153,6 +153,7 @@
   const DAYS = ['sunnudagur','mánudagur','þriðjudagur','miðvikudagur','fimmtudagur','föstudagur','laugardagur'];
   const MONTHS = ['janúar','febrúar','mars','apríl','maí','júní','júlí','ágúst','september','október','nóvember','desember'];
   const $ = id => document.getElementById(id);
+  const key = c => c.id || c.date;
 
   function fmtDate(iso) {
     const [y, m, d] = iso.split('-').map(Number);
@@ -184,8 +185,8 @@
     $('next').disabled = $('latest').disabled = i === comics.length - 1;
     $('random').disabled = comics.length < 2;
     document.querySelectorAll('#archive-list a').forEach(a =>
-      a.setAttribute('aria-current', a.dataset.date === c.date ? 'true' : 'false'));
-    if (location.hash.slice(1) !== c.date) history.replaceState(null, '', '#' + c.date);
+      a.setAttribute('aria-current', a.dataset.key === key(c) ? 'true' : 'false'));
+    if (location.hash.slice(1) !== key(c)) history.replaceState(null, '', '#' + key(c));
     document.title = `Skrifstofulífið – ${c.title || fmtDate(c.date)}`;
   }
 
@@ -198,8 +199,8 @@
       t.dateTime = c.date;
       t.textContent = c.date;
       const a = document.createElement('a');
-      a.href = '#' + c.date;
-      a.dataset.date = c.date;
+      a.href = '#' + key(c);
+      a.dataset.key = key(c);
       a.textContent = c.title || fmtDate(c.date);
       li.append(t, a);
       ul.appendChild(li);
@@ -209,7 +210,7 @@
 
   function fromHash() {
     const h = location.hash.slice(1);
-    const i = comics.findIndex(c => c.date === h);
+    const i = comics.findIndex(c => key(c) === h);
     show(i >= 0 ? i : comics.length - 1);
   }
 
@@ -234,7 +235,7 @@
     .then(data => {
       comics = (data.comics || [])
         .filter(c => c && c.date && c.image)
-        .sort((a, b) => a.date.localeCompare(b.date));
+        .sort((a, b) => a.date.localeCompare(b.date) || key(a).localeCompare(key(b)));
       if (!comics.length) { $('empty').hidden = false; return; }
       $('strip').hidden = false;
       $('nav').hidden = false;

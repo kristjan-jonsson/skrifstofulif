@@ -24,7 +24,7 @@ Síðan er hrein statísk HTML-síða (engin build). `index.html` les `comics.js
    }
    ```
 
-   `date`, `title` og `image` eru nauðsynleg; `alt` og `panels` valkvæð. Röðin skiptir ekki máli – síðan raðar eftir `date`. Ef færsla með sömu dagsetningu er til, skipta henni út frekar en að bæta við.
+   `date`, `title` og `image` eru nauðsynleg; `alt`, `panels` og `id` valkvæð. Ef fleiri en ein skrýtla er sama dag, gefðu þeim aukalegu `id` eins og `2026-10-13-2` (notað í varanlega tenglinum `#id`) og vistaðu myndina undir sama nafni. Röðin skiptir ekki máli – síðan raðar eftir `date`. Ef færsla með sömu dagsetningu er til, skipta henni út frekar en að bæta við.
 3. Commit og push á `main`, t.d. `git commit -m "Skrýtla 2026-10-15: Stuttur titill"`. GitHub Pages uppfærist innan 1–2 mínútna.
 
 Push með PAT: `git push https://x-access-token:${GITHUB_TOKEN}@github.com/kristjan-jonsson/skrifstofulif.git main`

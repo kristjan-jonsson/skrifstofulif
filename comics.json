@@ -1,3 +1,27 @@
 {
-  "comics": []
+  "comics": [
+    {
+      "date": "2026-10-13",
+      "title": "Kári hrafn ráðgjafi",
+      "image": "comics/2026-10-13.png",
+      "alt": "Kári hrafn ráðgjafi rukkar 60.000 kr. á tímann, greinir að „þið eruð með vandamál“ og sendir reikning upp á 4 milljónir fyrir vottað glærusett.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Þetta er Kári. Hann er ráðgjafinn sem á að finna út hvar við getum sparað.“ Kári: „Kraa. Tímagjaldið er 60.000 kr.“",
+        "Rammi 2 – Tafla: „Niðurstöður greiningar – helsta vandamál: ÞIÐ ERUÐ MEÐ VANDAMÁL.“ Bjarni: „Stórkostlegt! Þetta skýrir allt!“",
+        "Rammi 3 – Gunnar: „Ég sagði þetta í fyrra. Ókeypis!“ Kári: „Já, en þú varst ekki með vottað glærusett.“ (Reikningur: Glærusett, vottað: 4.000.000 kr.)"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "id": "2026-10-13-2",
+      "title": "Fundur um að fækka fundum",
+      "image": "comics/2026-10-13-2.png",
+      "alt": "Hópsena við fundarborð: Bjarni heldur fund um að fækka fundum og endar á að boða fund um að sleppa fundinum.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Þessi fundur er haldinn til að fækka fundum.“ (Snæfríður sefur.)",
+        "Rammi 2 – Hrólfur: „Til þess að ljúka fundi þarf eyðublað A-17 í þríriti.“ Lundi: „Ég skrifa fundargerð! Þetta er sú fjórða í dag!“",
+        "Rammi 3 – Gunnar: „Gætum við ekki bara sleppt þessum fundi?“ Kári: „Frábær hugmynd! Boðum fund til að ræða hana.“"
+      ]
+    }
+  ]
 }
