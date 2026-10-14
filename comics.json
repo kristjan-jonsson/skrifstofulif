@@ -22,6 +22,19 @@
         "Rammi 2 – Hrólfur: „Til þess að ljúka fundi þarf eyðublað A-17 í þríriti.“ Lundi: „Ég skrifa fundargerð! Þetta er sú fjórða í dag!“",
         "Rammi 3 – Gunnar: „Gætum við ekki bara sleppt þessum fundi?“ Kári: „Frábær hugmynd! Boðum fund til að ræða hana.“"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "id": "2026-10-13-3",
+      "title": "Fundur um að fækka fundum – tuskudýraútgáfa",
+      "image": "comics/2026-10-13-3.png",
+      "alt": "Sami brandari og fundur um að fækka fundum, teiknaður eins og saumuð tuskudýr: Bjarni, Kári hrafn, Snæfríður kisa, Hrólfur sauður, Lundi nemi og Gunnar enda á að boða fund um að sleppa fundinum."
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Aðgangur að aðgangi",
+      "image": "comics/2026-10-14.png",
+      "alt": "Bjarni boðar að gervigreind afgreiði öll eyðublöð; Hrólfur krefst eyðublaðs E-42 í þríriti til að fá aðgang að gervigreindinni, sem hafnar umsókninni því umsækjandinn hefur ekki aðgang – og þá þarf eyðublað E-43, áfrýjun."
     }
   ]
 }
