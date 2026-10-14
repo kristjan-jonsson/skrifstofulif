@@ -149,19 +149,19 @@ curl -i -X POST "$URL" -H 'Origin: https://skrifstofulif.oskasteinar.is' -d '{"i
 - On load, fetch `https://raw.githubusercontent.com/kristjan-jonsson/skrifstofulif/votes/votes.json` with `cache: 'no-cache'`. If that fails, show no counts.
 - `show(i)` updates the counts and button state for the current comic.
 - On click:
-  - Send the POST.
-  - Increment the shown count right away.
-  - Store `vote:<key>` in `localStorage`, wrapped in try/catch.
-  - Disable both buttons for that comic and mark the one that was chosen.
+  - Clicking the other button switches the vote; clicking your current vote again takes it back (`vote: 'none'`).
+  - Send the POST with `{ id, vote, prev }`.
+  - Update the shown counts right away (subtract from `prev`, add to `vote`).
+  - Store `vote:<key>` in `localStorage`, or remove it when taken back, wrapped in try/catch.
+  - Mark the chosen button with `aria-pressed`. The buttons stay enabled.
 - The real count lags by about 1–5 minutes, because of the Action run and raw-CDN caching.
 
 ## Part D: `README.md`
 Add a short Icelandic section: how voting works, where the counts are (the `votes` branch), and a link to `voting-setup.md`.
 
 ## Limitations (on purpose)
-- Votes are one per comic per browser, enforced only by localStorage, so it's easy to cheat. That's fine for office fun.
+- Votes are one per comic per browser (which can be switched or taken back), enforced only by localStorage, so it's easy to cheat. That's fine for office fun.
 - The Origin check only stops browsers. `curl` can fake the Origin header.
-- A vote can't be changed after it's cast.
 - There's no rate limiting beyond Cloudflare's defaults. Free tier: 100k requests per day.
 - The PAT expires, so remember to renew it.
 
@@ -173,6 +173,7 @@ A1, A2, A4 and A5: the account, the token, logging in and the deploy. Then you p
 2. Once `vote.yml` is on `main`: run the curl again, then check that a "vote" run appears under the Actions tab and the `votes` branch has `{"2026-10-13":{"up":1}}`.
 3. Fire 5 parallel curls and confirm all 5 are counted, which tests the retry loop.
 4. On the page: click 👍 and confirm that:
-   - the count goes up and the buttons are disabled;
+   - the count goes up and 👍 is marked;
+   - clicking 👎 moves the vote, and clicking 👎 again takes it back;
    - after a reload, the vote is still remembered;
    - another comic has its own state.
