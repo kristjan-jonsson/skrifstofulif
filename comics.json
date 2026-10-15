@@ -48,6 +48,18 @@
       "title": "Sjálfstæði starfsmanna",
       "image": "comics/2026-10-15.png",
       "alt": "Kötturinn Snæfríður sofnar á lyklaborðinu og sendir bull á allt fyrirtækið; Bjarni hampar því sem „STEFNA 2027“, Kári býðst til að túlka hana í sex mánaða verkefni og Snæfríður er ráðin yfirarkitekt."
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-2",
+      "title": "Gunnar 2.0",
+      "image": "comics/2026-10-15-2.png",
+      "alt": "Bjarni lætur þjálfa gervigreind á tölvupóstum Gunnars; tvífarinn svarar öllu með „Þetta gengur aldrei upp“ og hefur alltaf rétt fyrir sér – Kári kaupir hana og leigir fyrirtækinu sem ráðgjafa á 60.000 kr. á tímann.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Gunnar, við þjálfuðum gervigreind á öllum tölvupóstunum þínum. Hún tekur við öllum verkefnunum þínum.“ Gunnar: „Skil. Hvenær byrjar hún að andvarpa?“",
+        "Rammi 2 – Kári: „Krá! Gunnar 2.0 svarar 4.000 tölvupóstum á mínútu.“ Lundi: „Öllum eins: ‚Þetta gengur aldrei upp.‘ Og hún hefur alltaf rétt fyrir sér!“",
+        "Rammi 3 – Gunnar: „Svo þið slökktuð á henni?“ Bjarni: „Nei. Kári keypti hana og leigir okkur hana sem ráðgjafa.“ Kári: „Krá! Hún segir það sama og áður. En nú hlustið þið – á 60.000 kr. á tímann.“"
+      ]
     }
   ]
 }
