@@ -51,6 +51,31 @@
   .strip-title { margin: 0; font-size: 20px; }
   .strip-date { color: var(--muted); font-size: 14px; }
   .strip img { display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
+  .viewport a { display: block; position: relative; }
+  .snap, .frame-dots { display: none; }
+
+  /* Farsími á langveginn: skrýtlan þrisvar sinnum breiðari, flett einum ramma í einu */
+  @media (max-width: 720px) and (orientation: portrait) {
+    .strip { padding: 12px 8px; }
+    .viewport {
+      overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+      scrollbar-width: none; border-radius: 4px;
+    }
+    .viewport::-webkit-scrollbar { display: none; }
+    .viewport a { width: 300%; }
+    .snap { display: block; position: absolute; top: 0; bottom: 0; width: 33.333%; scroll-snap-align: start; pointer-events: none; }
+    .snap:nth-child(2) { left: 0; }
+    .snap:nth-child(3) { left: 33.333%; }
+    .snap:nth-child(4) { left: 66.667%; }
+    .frame-dots { display: flex; justify-content: center; gap: 4px; margin-top: 8px; }
+    .frame-dots button {
+      appearance: none; border: 0; background: none; padding: 8px; cursor: pointer;
+    }
+    .frame-dots button::before {
+      content: ""; display: block; width: 8px; height: 8px; border-radius: 50%; background: var(--line);
+    }
+    .frame-dots button[aria-current="true"]::before { background: var(--accent); }
+  }
   .nav { display: flex; gap: 8px; justify-content: center; margin: 16px 0 0; flex-wrap: wrap; }
   .btn {
     appearance: none; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
@@ -109,7 +134,12 @@
       <h2 class="strip-title" id="title"></h2>
       <span class="strip-date" id="date"></span>
     </div>
-    <a id="imglink" target="_blank" rel="noopener"><img id="img" alt=""></a>
+    <div class="viewport" id="viewport">
+      <a id="imglink" target="_blank" rel="noopener"><img id="img" alt=""><span class="snap"></span><span class="snap"></span><span class="snap"></span></a>
+    </div>
+    <div class="frame-dots" id="frame-dots" aria-label="Rammar">
+      <button aria-label="Rammi 1" aria-current="true"></button><button aria-label="Rammi 2"></button><button aria-label="Rammi 3"></button>
+    </div>
     <div class="votes" id="votes" hidden>
       <button class="btn" id="vote-up" aria-pressed="false" aria-label="Fyndið">👍 <span id="count-up"></span></button>
       <button class="btn" id="vote-down" aria-pressed="false" aria-label="Ekki fyndið">👎 <span id="count-down"></span></button>
@@ -132,7 +162,7 @@
 </main>
 
 <footer>
-  <div class="wrap">Skrifstofulífið · Allar persónur eru skáldaðar og öll líkindi við raunveruleikann er tilviljun. Skrýtlur eru framleiddar af gervigreind og óritskoðaðar.<br>© 2026 Kristján Jónsson · <a href="LICENSE">CC BY 4.0</a> · <a href="feed.xml">RSS</a></div>
+  <div class="wrap">Skrifstofulíf · Allar persónur eru skáldaðar og öll líkindi við raunveruleikann er tilviljun. Skrýtlur eru framleiddar af gervigreind og óritskoðaðar.<br>© 2026 Kristján Jónsson · <a href="LICENSE">CC BY 4.0</a> · <a href="feed.xml">RSS</a></div>
 </footer>
 
 <script>
@@ -165,6 +195,7 @@
     $('img').src = c.image;
     $('img').alt = c.alt || `Skrifstofulífið ${fmtDate(c.date)}: ${c.title || ''}`;
     $('imglink').href = c.image;
+    $('viewport').scrollLeft = 0;
     $('first').disabled = $('prev').disabled = i === 0;
     $('next').disabled = $('latest').disabled = i === comics.length - 1;
     $('random').disabled = comics.length < 2;
@@ -242,6 +273,13 @@
     let r; do { r = Math.floor(Math.random() * comics.length); } while (comics.length > 1 && r === idx);
     show(r);
   };
+  const vp = $('viewport');
+  const dots = [...$('frame-dots').children];
+  vp.addEventListener('scroll', () => {
+    const f = Math.round(vp.scrollLeft / vp.clientWidth);
+    dots.forEach((d, i) => d.setAttribute('aria-current', i === f ? 'true' : 'false'));
+  }, { passive: true });
+  dots.forEach((d, i) => d.onclick = () => vp.scrollTo({ left: i * vp.clientWidth, behavior: 'smooth' }));
   $('vote-up').onclick = () => castVote('up');
   $('vote-down').onclick = () => castVote('down');
   window.addEventListener('hashchange', fromHash);
