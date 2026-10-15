@@ -42,7 +42,7 @@ Breyttu uppsetningu milli brandara og milli ramma. Bakgrunnur: veggur, gluggi, t
 ## Tækni
 
 - Teiknaðu í Python með PIL. Teiknaðu á 2x skala og minnkaðu með LANCZOS.
-- Um 2150×870 px; haus „SKRIFSTOFULÍFIÐ“ + dagsetning á íslensku (vikudagur, dagur, mánuður, ár); 3 rammar.
+- Um 2150×870 px; haus með „skrifstofulif.oskasteinar.is“ efst til vinstri, titli dagsins í miðju og dagsetningu á íslensku (vikudagur, dagur, mánuður, ár); 3 rammar.
 - Persónur: andlit (augu, augabrúnir, nef, munnur með ólíkum svipbrigðum, eyru, hár, gleraugu), háls, kragi, bindi, handleggir/hendur í mismunandi stellingum.
 - Dýr með einkennandi form: hrafn (goggur, fjaðrir á kolli), kisa (eyru, hárbroddar, skegg), sauður (ullarský), lundi (litríkur goggur).
 - Dýpt: láttu hjálparföll nota umbreytingu (scale um akkerispunkt) svo hægt sé að teikna persónur minni/fjær. Teiknaðu fjærri persónur fyrst, svo borð (með gólflit-maska fyrir neðan borðið svo búkar sjáist ekki), svo nær persónur.
@@ -61,7 +61,7 @@ Breyttu uppsetningu milli brandara og milli ramma. Bakgrunnur: veggur, gluggi, t
 
   Búðu til nýjan font-hlut fyrir hverja stærð og stilltu ásana á hvern og einn. Staðfestu röð ásanna með `f.get_variation_axes()` og raðaðu gildunum eftir nöfnunum ef röðin er önnur. Ef leturskráin er ekki til, notaðu `/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf` í staðinn og nefndu það í myndatextanum.
 - Allur texti í talblöðrum er í HÁSTÖFUM. Breyttu textanum í hástafi (`.upper()`) ÁÐUR en þú reiknar línuskiptingu og breidd, því hástafir eru breiðari.
-- Haus: nafn ræmunnar „SKRIFSTOFULÍFIÐ“ í hástöfum, þyngd 760. Titill dagsins og dagsetning í sama letri og þyngd, með venjulegum hástöfum og lágstöfum.
+- Haus: efst til vinstri stendur slóðin „skrifstofulif.oskasteinar.is“ í lágstöfum, þyngd 760 (ekki „SKRIFSTOFULÍFIÐ“). Titill dagsins og dagsetning í sama letri og þyngd, með venjulegum hástöfum og lágstöfum.
 - Línubil í blöðrum er 1,12 × leturstærð. Byrjaðu í stærð 40 og minnkaðu letrið þar til textinn passar inn í blöðruna, með a.m.k. 16 px spássíu til hliðanna og 9 px að ofan og neðan. Textinn má aldrei snerta útlínu blöðrunnar.
 - Ekki brjóta línu inni í tölum og einingum („60.000 kr.“, „Gunnar 2.0“). Notaðu óbrjótanlegt bil (U+00A0, í Python `" "`) og skiptu línum aðeins á venjulegum bilum.
 - Texti sem er hluti af myndinni sjálfri (tölvuskjáir, töflur, skilti, reikningar) er í `/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf`, í venjulegum hástöfum og lágstöfum. Hann á að líta út eins og prentaður tölvutexti, ólíkt handletruðu talblöðrunum.
