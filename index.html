@@ -84,6 +84,9 @@
   .btn[disabled] { opacity: .4; cursor: default; }
   .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
   .votes { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+  .votes .btn[hidden] { display: none; }
+  .votes .share { display: inline-flex; align-items: center; gap: 6px; }
+  .votes .share svg { width: 1em; height: 1em; }
   .votes .btn[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); opacity: 1; font-weight: 700; }
 
   /* Placeholder */
@@ -139,9 +142,10 @@
     <div class="frame-dots" id="frame-dots" aria-label="Rammar">
       <button aria-label="Rammi 1" aria-current="true"></button><button aria-label="Rammi 2"></button><button aria-label="Rammi 3"></button>
     </div>
-    <div class="votes" id="votes" hidden>
-      <button class="btn" id="vote-up" aria-pressed="false" aria-label="Fyndið">👍 <span id="count-up"></span></button>
-      <button class="btn" id="vote-down" aria-pressed="false" aria-label="Ekki fyndið">👎 <span id="count-down"></span></button>
+    <div class="votes" id="votes">
+      <button class="btn" id="vote-up" hidden aria-pressed="false" aria-label="Fyndið">👍 <span id="count-up"></span></button>
+      <button class="btn" id="vote-down" hidden aria-pressed="false" aria-label="Ekki fyndið">👎 <span id="count-down"></span></button>
+      <button class="btn share" id="share" aria-label="Deila skrýtlu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span id="share-label">Deila</span></button>
     </div>
   </figure>
 
@@ -240,6 +244,23 @@
     }).catch(() => {});
   }
 
+  function shareComic() {
+    if (idx < 0) return;
+    const c = comics[idx];
+    const url = location.origin + location.pathname.replace(/[^/]*$/, '') + 's/' + key(c) + '/';
+    const title = `Skrifstofulífið – ${c.title || fmtDate(c.date)}`;
+    if (navigator.share) {
+      navigator.share({ title, url }).catch(() => {});
+      return;
+    }
+    const done = ok => {
+      $('share-label').textContent = ok ? 'Slóð afrituð!' : 'Tókst ekki að afrita';
+      setTimeout(() => { $('share-label').textContent = 'Deila'; }, 2000);
+    };
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(() => done(true), () => done(false));
+    else done(false);
+  }
+
   function renderArchive() {
     const ul = $('archive-list');
     ul.replaceChildren();
@@ -281,6 +302,7 @@
   dots.forEach((d, i) => d.onclick = () => vp.scrollTo({ left: i * vp.clientWidth, behavior: 'smooth' }));
   $('vote-up').onclick = () => castVote('up');
   $('vote-down').onclick = () => castVote('down');
+  $('share').onclick = shareComic;
   window.addEventListener('hashchange', fromHash);
   document.addEventListener('keydown', e => {
     if (!comics.length) return;
@@ -301,7 +323,7 @@
       renderArchive();
       fromHash();
       if (VOTE_URL) {
-        $('votes').hidden = false;
+        $('vote-up').hidden = $('vote-down').hidden = false;
         fetch(VOTES_JSON, { cache: 'no-cache' })
           .then(r => r.ok ? r.json() : {})
           .catch(() => ({}))

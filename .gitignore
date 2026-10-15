@@ -14,3 +14,9 @@ node_modules/
 
 # RSS-straumur, búinn til í pages.yml
 feed.xml
+
+# Deilisíður, búnar til í pages.yml
+s/
+
+# Python
+__pycache__/
