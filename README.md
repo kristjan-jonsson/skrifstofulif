@@ -5,6 +5,8 @@ https://kristjan-jonsson.github.io/skrifstofulif/
 
 Síðan er hreinn statísk HTML-síða án build-ferlis. `index.html` les `comics.json` og birtir nýjustu skrýtlu, með flettingu, handahófsvali, safni og varanlegum tenglum (`#YYYY-MM-DD`).
 
+Sjálfvirka verkið sem býr til skrýtlurnar fylgir [`LEIDBEININGAR.md`](LEIDBEININGAR.md) (persónur, stíll, letur og birtingarferli).
+
 ## Hvernig ný skrýtla er birt
 
 1. Vista myndina sem `comics/YYYY-MM-DD.png` (t.d. `comics/2026-10-15.png`).
