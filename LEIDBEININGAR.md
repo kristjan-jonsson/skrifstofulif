@@ -18,6 +18,7 @@ Upprunalegar persónur, hver með sinn metnað. Notaðu ekki Dilbert eða aðrar
 - **Snæfríður kisa** (appelsínugul): stefnir á yfirarkitekt, sefur helst á lyklaborðinu, vaknar aðeins til að eigna sér heiðurinn.
 - **Hrólfur sauður** (hvít ull, gleraugu): mannauðsmál, fylgir verkferlum í blindni, vill eyðublað í þríriti fyrir allt.
 - **Lundi nemi** (svartur/hvítur með appelsínugult nef): ofurmetnaðarfullur, tekur að sér allt sem enginn vill, skrifar fundargerðir.
+- **Sigrún sérfræðingur:** rautt hár í snúð með blýanti stungnum í gegn, græn blússa, litlir gulleyrnalokkar, oft með kaffibolla eða fartölvu undir hendinni. Klárasta manneskjan á staðnum og bráðfyndin. Er alltaf vel með á nótunum, sér í gegnum tískuorð og ráðgjafabull á augabragði og hefur oftast leyst málið áður en fundurinn byrjar. Húmorinn hennar er hnyttinn og þurr, ólíkt þreyttri kaldhæðni Gunnars. Hún tapar sjaldan og fær gjarnan beittustu línuna eða punchline-ið. Tekur virkan þátt í brandaranum og er aldrei bara skraut eða skotspónn.
 
 Ekki nota allar í hverjum brandara; veldu þær sem henta. Stundum aðeins 1–2, stundum hópsena. Bættu við nýjum aukapersónum (t.d. önnur dýr) af og til.
 
