@@ -136,6 +136,18 @@
         "Rammi 2 – SOC-teymið í kór: „Sannaðu það! Þrjú lykilorð og blóðprufa!“ Lundi: „Ég er Lundi! Ég skrifa fundargerðina!“",
         "Rammi 3 – Sigrún: „Núlltraust virkar. Þeir hleypa engum inn – ekki einu sinni sjálfum sér.“ (Skjár: Aðgangur hafnaður – SOC-teymið (3), staða: úti.)"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-3",
+      "title": "Tæknileg skuld",
+      "image": "comics/2026-10-16-3.png",
+      "alt": "Gunnar útskýrir að kerfið sé hægt vegna tæknilegrar skuldar; Bjarni vill borga hana strax, Sigrún segir engan eiga hana, Kári býðst til að endurfjármagna hana á 60.000 kr. á tímann – en skuldin reynist vera Excel-skjal frá 2009 eftir Bjarna sjálfan, sem skuldar þá sjálfum sér.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Af hverju er kerfið svona hægt?“ Gunnar: „Tæknileg skuld.“",
+        "Rammi 2 – Sigrún: „Enginn á skuldina og enginn skilur hana.“ Kári: „Krá! Ég endurfjármagna hana. 60.000 kr. á tímann.“ (Tafla: Tæknileg skuld – eigandi ókunnur, 4.000 línur, engin skjöl.)",
+        "Rammi 3 – Sigrún: „Skuldin er skjal frá 2009. Höfundur: Bjarni.“ Bjarni: „Þá skulda ég sjálfum mér!“ (Skjal: skuld.xlsx, búið til 2009.)"
+      ]
     }
   ]
 }
