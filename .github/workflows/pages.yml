@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Copy site
-        run: rsync -a --exclude .git --exclude .github --exclude worker --exclude _site ./ _site/
+        run: rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude worker --exclude _site ./ _site/
       - name: Build RSS feed
         run: python3 scripts/build_feed.py comics.json _site/feed.xml
       - name: Build share pages
