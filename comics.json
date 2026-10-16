@@ -184,6 +184,18 @@
         "Rammi 2 – Sigrún: „Þetta er kaffivélin. Hún sendir uppskriftina að kaffinu okkar út á hverri nóttu.“",
         "Rammi 3 – Bjarni: „Hver tekur við henni?“ Sigrún: „Kaffivélin í næsta húsi. Þeir eru komnir með betra kaffi.“ Gunnar: „Og við fengum ekki einu sinni þakkir.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-7",
+      "title": "Hakkaþon",
+      "image": "comics/2026-10-16-7.png",
+      "alt": "Bjarni boðar hakkaþon á föstudag; SOC-apateymið hangir úr loftljósinu og æpir að hakkarar séu í húsinu. Sigrún útskýrir að þetta séu forritarar og pizza, en SOC lokar á pizzuna. Að lokum kemur í ljós að SOC vann hakkaþonið – þeir hökkuðu pizzupöntunina.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Á föstudag höldum við hakkaþon!“ SOC-teymið í kór: „Hakkarar! Hakkarar í húsinu!“ (Tafla: Hakkaþon, föstudag kl. 14:00, pizza: já.)",
+        "Rammi 2 – Sigrún: „Þetta er hakkaþon. Forritarar, pizza, engir hakkarar.“ SOC: „Við lokum á pizzuna!“ (Skjár: pizza.exe – Staða: LOKAÐ af SOC, ástæða: of girnileg.)",
+        "Rammi 3 – Gunnar: „Hver vann hakkaþonið?“ Sigrún: „SOC. Þeir hökkuðu pizzupöntunina.“ SOC: „Við fundum veikleika í pizzunni!“ (Pizzukassar á gólfinu.)"
+      ]
     }
   ]
 }
