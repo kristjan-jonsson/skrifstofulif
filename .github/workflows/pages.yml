@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # build_feed.py les birtingartíma úr git log
       - name: Copy site
         run: rsync -a --exclude .git --exclude .github --exclude .gitignore --exclude worker --exclude _site ./ _site/
       - name: Build RSS feed
