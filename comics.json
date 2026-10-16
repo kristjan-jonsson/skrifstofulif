@@ -340,6 +340,18 @@
         "Rammi 2 – Kári: „Ég útvista því til ykkar.“ Sigrún: „Semsagt: við gerum verkið sem við vorum að útvista.“",
         "Rammi 3 – Bjarni: „Stórkostlegt!“ Sigrún: „Mínus 4 milljónir sparaðar. Skýrslan er útvistuð til okkar.“ Kári: „Kraa. Hagræðing.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-20",
+      "title": "Þrjú hundruð og sextíu gráður",
+      "image": "comics/2026-10-16-20.png",
+      "alt": "Hrólfur kynnir 360° endurgjöf þar sem allir meta alla í þríriti. Niðurstöðurnar sýna að Snæfríður kisa fær 5,0 því hún hefur aldrei gert neitt, enginn getur kvartað yfir því sem sést ekki; Bjarni vill hækka hana í launum og Gunnar ákveður að gera ekkert frá og með mánudegi.",
+      "panels": [
+        "Rammi 1 – Hrólfur: „Ný endurgjöf: allir meta alla, í þríriti.“ Bjarni: „Ég er til í allt!“ (Skilti: 360° endurgjöf.)",
+        "Rammi 2 – Gunnar: „Snæfríður fær 5,0. Hún hefur aldrei gert neitt.“ Sigrún: „Enginn getur kvartað yfir því sem sést ekki.“ (Skjár: Niðurstöður 360°: Bjarni 5,0, Gunnar 2,1, Sigrún 4,9, Snæfríður 5,0.)",
+        "Rammi 3 – Bjarni: „Hækkum hana í launum! Hún er fullkomin!“ Gunnar: „Þá byrja ég að gera ekkert. Strax á mánudag.“ (Snæfríður sefur: Zzz.)"
+      ]
     }
   ]
 }
