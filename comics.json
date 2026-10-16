@@ -256,6 +256,18 @@
         "Rammi 2 – Sigrún: „Hann er að vinna.“ SOC-teymið: „Lokum aðgangnum!“ (Skilti: Aðgangur: Gunnar – LOKAÐ.) Gunnar fagnar.",
         "Rammi 3 – Bjarni: „Hvernig er staðan?“ Sigrún: „Öruggasta fyrirtæki landsins. Enginn að gera neitt.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-13",
+      "title": "Gervigreindarstefna",
+      "image": "comics/2026-10-16-13.png",
+      "alt": "Bjarni vill gervigreindarstefnu; Sigrún lét gervigreindina skrifa hana og hún samþykkti hana líka. Kafli 7 bannar að nota gervigreind til að skrifa stefnur og Sigrún segir að stefnan hafi brotið sjálfa sig.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Við þurfum gervigreindarstefnu! Hver skrifar hana?“ Sigrún: „Ég lét gervigreindina skrifa hana.“ (Skjár: Stefna.docx, 80 síður, höf.: AI.)",
+        "Rammi 2 – Gunnar: „Hver las hana?“ Sigrún: „Gervigreindin. Hún samþykkti hana líka.“ Bjarni: „Frábært! Engin mannleg aðkoma!“",
+        "Rammi 3 – (Skilti: Stefna – kafli 7: Bannað er að nota gervigreind til að skrifa stefnur.) Bjarni: „Hver braut þá stefnuna?“ Sigrún: „Stefnan. Hún braut sjálfa sig.“"
+      ]
     }
   ]
 }
