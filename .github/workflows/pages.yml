@@ -1,36 +1,39 @@
 name: Deploy to GitHub Pages
 
+# Byggir síðuna (með feed.xml og deilisíðum s/) og ýtir henni á gh-pages greinina.
+# GitHub Pages er stillt á „Deploy from a branch“ → gh-pages / (root).
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - name: Copy site
+        run: rsync -a --exclude .git --exclude .github --exclude worker --exclude _site ./ _site/
       - name: Build RSS feed
-        run: python3 scripts/build_feed.py comics.json feed.xml
+        run: python3 scripts/build_feed.py comics.json _site/feed.xml
       - name: Build share pages
         run: |
           python3 -m pip install --quiet pillow
-          python3 scripts/build_share.py comics.json s
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          python3 scripts/build_share.py comics.json _site/s
+      - name: Push to gh-pages
+        working-directory: _site
+        run: |
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Birting ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
