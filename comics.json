@@ -220,6 +220,18 @@
         "Rammi 2 – Sigrún: „Ég kom á skrifstofuna. Ég er á Teams-fundi með manneskjunni í næsta herbergi.“ (Skilti: Fundarherbergi 3 – Bókað: Teams-fundur.)",
         "Rammi 3 – Bjarni: „Hvar eru allir? Ekkert heyrist!“ Sigrún: „Samvinnan blómstrar. Ég sendi þér fundarboð, Bjarni.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-10",
+      "title": "Fjölþátta auðkenning",
+      "image": "comics/2026-10-16-10.png",
+      "alt": "Hrólfur kynnir fjölþátta auðkenningu (lykilorð, kóði í síma, fingrafar) og Bjarni segist alltaf hafa allt þrennt. Hann lokast úti því síminn er heima í hleðslu, SOC-teymið æpir að einhver reyni að skrá sig inn sem Bjarni og hann reynir að útskýra plástur á fingri. Sigrún bendir á að öryggið sé loksins fullkomið: enginn kemst inn, ekki einu sinni hann.",
+      "panels": [
+        "Rammi 1 – Hrólfur (tafla: Fjölþátta auðkenning): „Ný öryggisregla: lykilorð, kóði í síma og fingrafar. Staðfest í þríriti.“ Bjarni: „Frábært! Ég er alltaf með allt þrennt!“",
+        "Rammi 2 – SOC-teymið (hangir úr loftinu): „Viðvörun! Einhver reynir að skrá sig inn sem Bjarni!“ Bjarni: „Ég ER Bjarni! Kóðinn fór í símann og síminn er heima í hleðslu!“ (Skjár: Aðgangi hafnað.)",
+        "Rammi 3 – SOC: „Ógninni var lokað úti!“ Bjarni: „Ég er með plástur. Kerfið kallar hann ‚ógn‘.“ Sigrún: „Fullkomið öryggi: enginn kemst inn – ekki einu sinni þú.“"
+      ]
     }
   ]
 }
