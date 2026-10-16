@@ -280,6 +280,18 @@
         "Rammi 2 – Gunnar: „Sprettur sem tekur tvær vikur?“ Bjarni: „Já! Og við hlaupum hægt, svo enginn þreytist.“",
         "Rammi 3 – Sigrún: „Sprettur, sem tekur tvær vikur, heitir göngutúr.“ Kári: „Göngutúr með þjálfara: 60.000 kr. á tímann. Skór ekki innifaldir.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-15",
+      "title": "Þjónustuverið",
+      "image": "comics/2026-10-16-15.png",
+      "alt": "Bjarni fagnar að þjónustuverið leysi 98% mála á fyrstu mínútu; Sigrún útskýrir að mál teljist leyst þegar viðskiptavinurinn hættir að hringja og Lundi vill slökkva á símanum til að ná 100%. Viðskiptavinirnir leystu málið sjálfir með því að skipta um fyrirtæki.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Þjónustuverið leysir 98% mála á fyrstu mínútu!“ Gunnar: „Hvernig mælum við ‚leyst‘?“ (Skilti: Þjónustuver, leyst: 98%, tími: 1 mín.)",
+        "Rammi 2 – Sigrún: „Mál telst leyst þegar viðskiptavinurinn hættir að hringja.“ Lundi: „Við stefnum á 100%! Næst slökkvum við á símanum!“ (Skilti: Biðröð: sæti 4.000, áætluð bið: 3 vikur.)",
+        "Rammi 3 – Gunnar: „Og viðskiptavinirnir?“ Sigrún: „Þeir leystu málið sjálfir: skiptu um fyrirtæki.“ Bjarni: „Mál leyst!“ (Skilti: Viðskiptavinir, nú: 0.)"
+      ]
     }
   ]
 }
