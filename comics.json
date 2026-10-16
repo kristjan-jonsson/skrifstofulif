@@ -160,6 +160,18 @@
         "Rammi 2 – Sigrún: „Mjög ánægð/ur, ánægð/ur og ánægð/ur með fyrirvara.“ Hrólfur: „Óánægjueyðublað er í þríriti á 3. hæð.“",
         "Rammi 3 – Gunnar: „Og svarhlutfallið?“ Sigrún: „Eitt svar. Bjarni svaraði sjálfur. Fimm sinnum.“ Bjarni: „Mjög ánægður!“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-5",
+      "title": "Öryggisafritið",
+      "image": "comics/2026-10-16-5.png",
+      "alt": "Netþjónninn hrundi og Bjarni fagnar öryggisafriti með grænu mælaborði; Sigrún opnar afritið, sem hefur verið tekið á hverri nóttu í þrjú ár en er tómt – fullkomið afrit af engu.",
+      "panels": [
+        "Rammi 1 – Gunnar: „Netþjónninn hrundi. En til allrar hamingju erum við með öryggisafrit!“ Bjarni: „Sagði ég ekki! Allt grænt í mælaborðinu.“",
+        "Rammi 2 – Sigrún: „Ég opnaði afritið. Það er tekið á hverri nóttu.“ „Í þrjú ár. Aldrei neitt í því.“ (Skjár: afrit_2023-2026, Stærð: 0 bæti, Staða: HEILT)",
+        "Rammi 3 – Bjarni: „Hversu mikið tapast?“ Sigrún: „Öll gögnin. En afritið er 100% heilt.“ Gunnar: „Fullkomið afrit af engu.“"
+      ]
     }
   ]
 }
