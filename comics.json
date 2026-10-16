@@ -388,6 +388,18 @@
         "Rammi 2 – (Skjár: Lundi vistaði skjal, Snæfríður snerti lyklaborð, Hrólfur prentaði, admin innskráður frá Pyongyang 03:12 – forgangur: lágur.) Sigrún: „Admin frá Pyongyang kl. 03:12?“ SOC: „Flokkað: Bjarni á ferðalagi.“",
         "Rammi 3 – Bjarni: „Ég hef aldrei komið til Pyongyang!“ Sigrún: „Lykilorðið þitt er Bjarni123. Þeir komu bara á undan þér.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-24",
+      "title": "Starfslýsingin",
+      "image": "comics/2026-10-16-24.png",
+      "alt": "Hrólfur afhendir Gunnari þriggja blaðsíðna starfslýsingu; Sigrún bendir á að liðir 1–14 séu allir „Önnur tilfallandi verkefni“. Lundi tekur að sér allt tilfallandi, Gunnar á þá ekkert starf og Sigrún segir starfslýsinguna loksins rétta.",
+      "panels": [
+        "Rammi 1 – Hrólfur: „Starfslýsing Gunnars, í þríriti. Þrjár blaðsíður!“ Gunnar: „Hvað felst starfið mitt eiginlega í?“",
+        "Rammi 2 – Sigrún: „Ég las hana. Liðir 1 til 14: Önnur tilfallandi verkefni.“ Bjarni: „Skýrt og afmarkað!“ (Skilti: liðir 1–14 og 15: Önnur tilfallandi verkefni.)",
+        "Rammi 3 – Lundi: „Ég tek að mér allt tilfallandi!“ Gunnar: „Þá á ég ekkert starf.“ Sigrún: „Nú er starfslýsingin loksins rétt.“"
+      ]
     }
   ]
 }
