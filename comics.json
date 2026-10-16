@@ -113,6 +113,17 @@
         "Rammi 2 – Bjarni: „Ég vann iPad! Ég þurfti bara að gefa upp lykilorðið mitt!“ Lundi: „Ég líka! Og fundargerðina!“ (Skjár: Smellt 1.203, ekki smellt 1.)",
         "Rammi 3 – Sigrún: „Aðeins einn smellti ekki: Hrólfur.“ Hrólfur: „Enginn sendi mér eyðublað í þríriti. Grunsamlegt!“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Fundargerð með gervigreind",
+      "image": "comics/2026-10-16.png",
+      "alt": "Bjarni kynnir gervigreind sem skrifar fundargerðir og segir Lunda laus; Lundi spyr hvort hann sé rekinn. Fundargerðin segir að fundurinn hafi snúist um að ræða málið, og Gunnar bendir á að hún hafi skráð þögnina. Sigrún segir hana nákvæma, fundurinn hafi enga niðurstöðu haft, og Bjarni fagnar því að hún hafi lært fyrirtækjamenninguna.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Nýja gervigreindin skrifar fundargerðir. Lundi, þú ert laus!“ Lundi: „Er ég þá rekinn?“ (Skjár: Fundargerðar-AI, staða: virk.)",
+        "Rammi 2 – Gunnar: „Hún skráði meira að segja þögnina.“ (Skjár: Fundargerð – 90 mín.: Rætt um að ræða málið; Ákveðið að ákveða síðar; Næsti fundur: fundur um fundinn; Niðurstaða: engin.)",
+        "Rammi 3 – Sigrún: „Hún er nákvæm. Fundurinn hafði enga niðurstöðu.“ Bjarni: „Frábært! Hún hefur lært fyrirtækjamenninguna!“"
+      ]
     }
   ]
 }
