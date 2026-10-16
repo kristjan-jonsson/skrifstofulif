@@ -172,6 +172,18 @@
         "Rammi 2 – Sigrún: „Ég opnaði afritið. Það er tekið á hverri nóttu.“ „Í þrjú ár. Aldrei neitt í því.“ (Skjár: afrit_2023-2026, Stærð: 0 bæti, Staða: HEILT)",
         "Rammi 3 – Bjarni: „Hversu mikið tapast?“ Sigrún: „Öll gögnin. En afritið er 100% heilt.“ Gunnar: „Fullkomið afrit af engu.“"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-6",
+      "title": "Snjallkaffivélin",
+      "image": "comics/2026-10-16-6.png",
+      "alt": "SOC-teymið varar við óþekktu tæki sem sendir gögn út á hverri nóttu; Sigrún útskýrir að það sé snjalla kaffivélin sem sendir uppskriftina að kaffinu út – til kaffivélarinnar í næsta húsi, sem er nú komin með betra kaffi. Gunnar kvartar yfir að fá ekki þakkir.",
+      "panels": [
+        "Rammi 1 – SOC-teymið: „Viðvörun! Óþekkt tæki á netinu!“ Bjarni: „Hvaða tæki?“ (Skjár: Sendir 4 GB/nótt, viðtakandi: ???)",
+        "Rammi 2 – Sigrún: „Þetta er kaffivélin. Hún sendir uppskriftina að kaffinu okkar út á hverri nóttu.“",
+        "Rammi 3 – Bjarni: „Hver tekur við henni?“ Sigrún: „Kaffivélin í næsta húsi. Þeir eru komnir með betra kaffi.“ Gunnar: „Og við fengum ekki einu sinni þakkir.“"
+      ]
     }
   ]
 }
