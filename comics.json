@@ -1,0 +1,512 @@
+{
+  "comics": [
+    {
+      "date": "2026-10-13",
+      "title": "Kári hrafn ráðgjafi",
+      "image": "comics/2026-10-13.png",
+      "alt": "Kári hrafn ráðgjafi rukkar 60.000 kr. á tímann, greinir að „þið eruð með vandamál“ og sendir reikning upp á 4 milljónir fyrir vottað glærusett.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Þetta er Kári. Hann er ráðgjafinn sem á að finna út hvar við getum sparað.“ Kári: „Kraa. Tímagjaldið er 60.000 kr.“",
+        "Rammi 2 – Tafla: „Niðurstöður greiningar – helsta vandamál: ÞIÐ ERUÐ MEÐ VANDAMÁL.“ Bjarni: „Stórkostlegt! Þetta skýrir allt!“",
+        "Rammi 3 – Gunnar: „Ég sagði þetta í fyrra. Ókeypis!“ Kári: „Já, en þú varst ekki með vottað glærusett.“ (Reikningur: Glærusett, vottað: 4.000.000 kr.)"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "id": "2026-10-13-2",
+      "title": "Fundur um að fækka fundum",
+      "image": "comics/2026-10-13-2.png",
+      "alt": "Hópsena við fundarborð: Bjarni heldur fund um að fækka fundum og endar á að boða fund um að sleppa fundinum.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Þessi fundur er haldinn til að fækka fundum.“ (Snæfríður sefur.)",
+        "Rammi 2 – Hrólfur: „Til þess að ljúka fundi þarf eyðublað A-17 í þríriti.“ Lundi: „Ég skrifa fundargerð! Þetta er sú fjórða í dag!“",
+        "Rammi 3 – Gunnar: „Gætum við ekki bara sleppt þessum fundi?“ Kári: „Frábær hugmynd! Boðum fund til að ræða hana.“"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "id": "2026-10-13-3",
+      "title": "Fundur um að fækka fundum – tuskudýraútgáfa",
+      "image": "comics/2026-10-13-3.png",
+      "alt": "Sami brandari og fundur um að fækka fundum, teiknaður eins og saumuð tuskudýr: Bjarni, Kári hrafn, Snæfríður kisa, Hrólfur sauður, Lundi nemi og Gunnar enda á að boða fund um að sleppa fundinum."
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Aðgangur að aðgangi",
+      "image": "comics/2026-10-14.png",
+      "alt": "Bjarni boðar að gervigreind afgreiði öll eyðublöð; Hrólfur krefst eyðublaðs E-42 í þríriti til að fá aðgang að gervigreindinni, sem hafnar umsókninni því umsækjandinn hefur ekki aðgang – og þá þarf eyðublað E-43, áfrýjun."
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Sjálfstæði starfsmanna",
+      "image": "comics/2026-10-15.png",
+      "alt": "Kötturinn Snæfríður sofnar á lyklaborðinu og sendir bull á allt fyrirtækið; Bjarni hampar því sem „STEFNA 2027“, Kári býðst til að túlka hana í sex mánaða verkefni og Snæfríður er ráðin yfirarkitekt."
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-2",
+      "title": "Gunnar 2.0",
+      "image": "comics/2026-10-15-2.png",
+      "alt": "Bjarni lætur þjálfa gervigreind á tölvupóstum Gunnars; tvífarinn svarar öllu með „Þetta gengur aldrei upp“ og hefur alltaf rétt fyrir sér – Kári kaupir hana og leigir fyrirtækinu sem ráðgjafa á 60.000 kr. á tímann.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Gunnar, við þjálfuðum gervigreind á öllum tölvupóstunum þínum. Hún tekur við öllum verkefnunum þínum.“ Gunnar: „Skil. Hvenær byrjar hún að andvarpa?“",
+        "Rammi 2 – Kári: „Krá! Gunnar 2.0 svarar 4.000 tölvupóstum á mínútu.“ Lundi: „Öllum eins: ‚Þetta gengur aldrei upp.‘ Og hún hefur alltaf rétt fyrir sér!“",
+        "Rammi 3 – Gunnar: „Svo þið slökktuð á henni?“ Bjarni: „Nei. Kári keypti hana og leigir okkur hana sem ráðgjafa.“ Kári: „Krá! Hún segir það sama og áður. En nú hlustið þið – á 60.000 kr. á tímann.“"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-3",
+      "title": "Skýjavæðing",
+      "image": "comics/2026-10-15-3.png",
+      "alt": "Bjarni boðar að öll gögn fyrirtækisins fari í skýið; Gunnar bendir á að þau eigi ekkert ský, svo Lundi flytur 4.000 skjöl í ullina á Hrólfi sauð – gagnaverinu – og Kári ætlar að prjóna gögnin í lopapeysu þegar hann verður rúinn í vor og sendir reikning upp á 900.000 kr.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Frá og með mánudegi geymum við öll gögn fyrirtækisins í skýinu!“ Gunnar: „Hvaða skýi? Við eigum ekki ský.“",
+        "Rammi 2 – Lundi: „Búinn að flytja 4.000 skjöl! Afritin fara aftast.“ Hrólfur: „Allt í þríriti, samkvæmt verklagi. En það klæjar.“ (Skilti: Gagnaver – Hýsing: Hrólfur, Afritun: þrírit.)",
+        "Rammi 3 – Gunnar: „Og hvað gerist þegar hann verður rúinn í vor?“ Kári: „Krá! Þá prjónum við gögnin í lopapeysu. Ég sendi reikning.“ (Reikningur: Prjónaþjónusta, 900.000 kr.)"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-4",
+      "title": "Lykilorðastefna",
+      "image": "comics/2026-10-15-4.png",
+      "alt": "Hrólfur sauður kynnir lykilorðastefnu (32 stafir, breytist daglega, aldrei skrifað niður); Lundi sendir fundargerð með lykilorðum allra á 1.204 viðtakendur – í þríriti. Brotist er inn í alla aðganga nema Snæfríðar, sem sefur á lyklaborðinu og býr til nýtt 32 stafa lykilorð á hverjum degi.",
+      "panels": [
+        "Rammi 1 – Hrólfur (við töflu: „Lykilorðastefna v3“): „Nýtt verklag: lykilorð skal vera 32 stafir, breytast daglega og aldrei skrifast niður.“ Gunnar: „Og hvernig á ég að muna það?“",
+        "Rammi 2 – Gunnar: „Lundi, fundargerðin er send á allt fyrirtækið.“ Lundi: „Já! Svo allir muni lykilorðin! Í þríriti!“ (Skjár: Sent á 1.204 viðtakendur.)",
+        "Rammi 3 – Gunnar: „Brotist var inn í alla aðganga nema Snæfríðar.“ Hrólfur: „Til fyrirmyndar! Hún er sú eina sem fylgir verklaginu.“ (Snæfríður sefur á lyklaborðinu; skjár: „Nýtt lykilorð: jjjjjjjj… ✓ Uppfyllir stefnu“.)"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-5",
+      "title": "Ógnin innan úr húsi",
+      "image": "comics/2026-10-15-5.png",
+      "alt": "SOC-apateymið hangir úr loftljósinu og æpir að óþekkt tæki sé á netinu; Sigrún útskýrir að það sé kaffivélin. Apateymið lokar á netið og kaffivélina og Sigrún bendir á að nú fyrst sé alvöru ógn: enginn fær kaffi.",
+      "panels": [
+        "Rammi 1 – SOC-teymið í kór: „Viðvörun! Óþekkt tæki á netinu! Allir að skjálfa!“ (Skjár: Heiti: KAFFIVEL-01.)",
+        "Rammi 2 – Sigrún: „Það er kaffivélin. Hún fékk nettengingu í gær.“ SOC: „Kaffivélin… er… innan… úr… húsi!“",
+        "Rammi 3 – Sigrún: „Nú fyrst er alvöru ógn: enginn fær kaffi.“ SOC: „Alvöru ógn! Loksins!“ (Gunnar og Bjarni sofna á skrifborðinu.)"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-6",
+      "title": "Stafræn umbreyting",
+      "image": "comics/2026-10-15-6.png",
+      "alt": "Kári hrafn selur Bjarna stafræna umbreytingu: skanna alla pappíra í PDF. Hrólfur krefst þess að PDF-in séu prentuð út í þríriti og Lundi prentar 4.000 síður. Sigrún bendir á að þau hafi farið úr pappír í pappír; Kári sendir reikning með 40% stafrænu álagi.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Stafræn umbreyting hefst í dag! Kári sér um hana.“ Kári: „Kraa! Fyrsta skref: skanna alla pappíra í PDF.“ (Tafla: 1. skanna í PDF, 2. ???, 3. reikningur.)",
+        "Rammi 2 – Hrólfur: „Og prenta PDF-in út í þríriti.“ Lundi: „Búinn með 4.000 síður! Prentarinn rýkur!“ (Skilti: Skjalageymsla – PDF → pappír.)",
+        "Rammi 3 – Sigrún: „Svo við fórum úr pappír í … pappír.“ Kári: „Rangt! Nú er pappírinn stafrænn. Álag: 40%.“ (Reikningur: Samtals 1.680.000 kr.)"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "id": "2026-10-15-7",
+      "title": "Vefveiðipróf",
+      "image": "comics/2026-10-15-7.png",
+      "alt": "Sigrún sendir öllum gabbpóst um iPad-vinning; Bjarni og Lundi gefa upp lykilorðin sín, 1.203 af 1.204 smella. Sá eini sem smellti ekki er Hrólfur, sem fékk ekkert eyðublað í þríriti og þótti það grunsamlegt.",
+      "panels": [
+        "Rammi 1 – Sigrún: „Ég sendi öllum gabbpóst: ‚Þú vannst iPad – smelltu hér.‘“ Gunnar: „Enginn fellur fyrir því.“ (Tafla: Vefveiðipróf, Smellt: ???)",
+        "Rammi 2 – Bjarni: „Ég vann iPad! Ég þurfti bara að gefa upp lykilorðið mitt!“ Lundi: „Ég líka! Og fundargerðina!“ (Skjár: Smellt 1.203, ekki smellt 1.)",
+        "Rammi 3 – Sigrún: „Aðeins einn smellti ekki: Hrólfur.“ Hrólfur: „Enginn sendi mér eyðublað í þríriti. Grunsamlegt!“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Fundargerð með gervigreind",
+      "image": "comics/2026-10-16.png",
+      "alt": "Bjarni kynnir gervigreind sem skrifar fundargerðir og segir Lunda laus; Lundi spyr hvort hann sé rekinn. Fundargerðin segir að fundurinn hafi snúist um að ræða málið, og Gunnar bendir á að hún hafi skráð þögnina. Sigrún segir hana nákvæma, fundurinn hafi enga niðurstöðu haft, og Bjarni fagnar því að hún hafi lært fyrirtækjamenninguna.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Nýja gervigreindin skrifar fundargerðir. Lundi, þú ert laus!“ Lundi: „Er ég þá rekinn?“ (Skjár: Fundargerðar-AI, staða: virk.)",
+        "Rammi 2 – Gunnar: „Hún skráði meira að segja þögnina.“ (Skjár: Fundargerð – 90 mín.: Rætt um að ræða málið; Ákveðið að ákveða síðar; Næsti fundur: fundur um fundinn; Niðurstaða: engin.)",
+        "Rammi 3 – Sigrún: „Hún er nákvæm. Fundurinn hafði enga niðurstöðu.“ Bjarni: „Frábært! Hún hefur lært fyrirtækjamenninguna!“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-2",
+      "title": "Núlltraust",
+      "image": "comics/2026-10-16-2.png",
+      "alt": "Bjarni boðar núlltraust: engum skal treyst. SOC-apateymið krefst þess að Lundi sanni hver hann er með þremur lykilorðum og blóðprufu, og endar á að loka sjálft sig úti því þeir þekkja ekki hver annan. Sigrún bendir á að núlltraust virki: þeir hleypa engum inn, ekki einu sinni sjálfum sér.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Frá og með í dag treystum við engum!“ Gunnar: „Ekki einu sinni þér?“ (Tafla: Núlltraust – 1. Treystum engum, 2. Sannreyna allt, 3. Sannreyna Bjarna.)",
+        "Rammi 2 – SOC-teymið í kór: „Sannaðu það! Þrjú lykilorð og blóðprufa!“ Lundi: „Ég er Lundi! Ég skrifa fundargerðina!“",
+        "Rammi 3 – Sigrún: „Núlltraust virkar. Þeir hleypa engum inn – ekki einu sinni sjálfum sér.“ (Skjár: Aðgangur hafnaður – SOC-teymið (3), staða: úti.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-3",
+      "title": "Tæknileg skuld",
+      "image": "comics/2026-10-16-3.png",
+      "alt": "Gunnar útskýrir að kerfið sé hægt vegna tæknilegrar skuldar; Bjarni vill borga hana strax, Sigrún segir engan eiga hana, Kári býðst til að endurfjármagna hana á 60.000 kr. á tímann – en skuldin reynist vera Excel-skjal frá 2009 eftir Bjarna sjálfan, sem skuldar þá sjálfum sér.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Af hverju er kerfið svona hægt?“ Gunnar: „Tæknileg skuld.“",
+        "Rammi 2 – Sigrún: „Enginn á skuldina og enginn skilur hana.“ Kári: „Krá! Ég endurfjármagna hana. 60.000 kr. á tímann.“ (Tafla: Tæknileg skuld – eigandi ókunnur, 4.000 línur, engin skjöl.)",
+        "Rammi 3 – Sigrún: „Skuldin er skjal frá 2009. Höfundur: Bjarni.“ Bjarni: „Þá skulda ég sjálfum mér!“ (Skjal: skuld.xlsx, búið til 2009.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-4",
+      "title": "Starfsánægjukönnun",
+      "image": "comics/2026-10-16-4.png",
+      "alt": "Bjarni fagnar 100% ánægju í starfsánægjukönnun; Sigrún útskýrir að svarmöguleikarnir hafi verið „mjög ánægð/ur“, „ánægð/ur“ og „ánægð/ur með fyrirvara“, Hrólfur að óánægjueyðublaðið sé í þríriti á 3. hæð, og að lokum kemur í ljós að eina svarið var frá Bjarna sjálfum – fimm sinnum.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Starfsánægjukönnunin sýnir 100% ánægju!“ Gunnar: „Hvað voru svarmöguleikarnir?“",
+        "Rammi 2 – Sigrún: „Mjög ánægð/ur, ánægð/ur og ánægð/ur með fyrirvara.“ Hrólfur: „Óánægjueyðublað er í þríriti á 3. hæð.“",
+        "Rammi 3 – Gunnar: „Og svarhlutfallið?“ Sigrún: „Eitt svar. Bjarni svaraði sjálfur. Fimm sinnum.“ Bjarni: „Mjög ánægður!“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-5",
+      "title": "Öryggisafritið",
+      "image": "comics/2026-10-16-5.png",
+      "alt": "Netþjónninn hrundi og Bjarni fagnar öryggisafriti með grænu mælaborði; Sigrún opnar afritið, sem hefur verið tekið á hverri nóttu í þrjú ár en er tómt – fullkomið afrit af engu.",
+      "panels": [
+        "Rammi 1 – Gunnar: „Netþjónninn hrundi. En til allrar hamingju erum við með öryggisafrit!“ Bjarni: „Sagði ég ekki! Allt grænt í mælaborðinu.“",
+        "Rammi 2 – Sigrún: „Ég opnaði afritið. Það er tekið á hverri nóttu.“ „Í þrjú ár. Aldrei neitt í því.“ (Skjár: afrit_2023-2026, Stærð: 0 bæti, Staða: HEILT)",
+        "Rammi 3 – Bjarni: „Hversu mikið tapast?“ Sigrún: „Öll gögnin. En afritið er 100% heilt.“ Gunnar: „Fullkomið afrit af engu.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-6",
+      "title": "Snjallkaffivélin",
+      "image": "comics/2026-10-16-6.png",
+      "alt": "SOC-teymið varar við óþekktu tæki sem sendir gögn út á hverri nóttu; Sigrún útskýrir að það sé snjalla kaffivélin sem sendir uppskriftina að kaffinu út – til kaffivélarinnar í næsta húsi, sem er nú komin með betra kaffi. Gunnar kvartar yfir að fá ekki þakkir.",
+      "panels": [
+        "Rammi 1 – SOC-teymið: „Viðvörun! Óþekkt tæki á netinu!“ Bjarni: „Hvaða tæki?“ (Skjár: Sendir 4 GB/nótt, viðtakandi: ???)",
+        "Rammi 2 – Sigrún: „Þetta er kaffivélin. Hún sendir uppskriftina að kaffinu okkar út á hverri nóttu.“",
+        "Rammi 3 – Bjarni: „Hver tekur við henni?“ Sigrún: „Kaffivélin í næsta húsi. Þeir eru komnir með betra kaffi.“ Gunnar: „Og við fengum ekki einu sinni þakkir.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-7",
+      "title": "Hakkaþon",
+      "image": "comics/2026-10-16-7.png",
+      "alt": "Bjarni boðar hakkaþon á föstudag; SOC-apateymið hangir úr loftljósinu og æpir að hakkarar séu í húsinu. Sigrún útskýrir að þetta séu forritarar og pizza, en SOC lokar á pizzuna. Að lokum kemur í ljós að SOC vann hakkaþonið – þeir hökkuðu pizzupöntunina.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Á föstudag höldum við hakkaþon!“ SOC-teymið í kór: „Hakkarar! Hakkarar í húsinu!“ (Tafla: Hakkaþon, föstudag kl. 14:00, pizza: já.)",
+        "Rammi 2 – Sigrún: „Þetta er hakkaþon. Forritarar, pizza, engir hakkarar.“ SOC: „Við lokum á pizzuna!“ (Skjár: pizza.exe – Staða: LOKAÐ af SOC, ástæða: of girnileg.)",
+        "Rammi 3 – Gunnar: „Hver vann hakkaþonið?“ Sigrún: „SOC. Þeir hökkuðu pizzupöntunina.“ SOC: „Við fundum veikleika í pizzunni!“ (Pizzukassar á gólfinu.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-8",
+      "title": "Hugmyndakassinn",
+      "image": "comics/2026-10-16-8.png",
+      "alt": "Bjarni opnar hugmyndakassa; Sigrún hefur lesið allar 1.203 hugmyndirnar og þær eru allar eins: „Leggja niður hugmyndakassann“. Hrólfur vill eyðublað í þríriti og Bjarni lýkur málinu með því að setja þá hugmynd í hugmyndakassann, þar sem hún týnist með hinum.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Hugmyndakassinn er opinn! Allar hugmyndir vel þegnar!“ Gunnar: „Hvað verður um þær?“",
+        "Rammi 2 – Sigrún: „Ég las allar 1.203 hugmyndirnar. Sama í þeim öllum: ‚Leggja niður hugmyndakassann.‘“ Hrólfur: „Slíkt þarf eyðublað í þríriti.“",
+        "Rammi 3 – Bjarni (með miða): „Frábær hugmynd! Ég set hana strax í hugmyndakassann.“ Sigrún: „Og þar týnist hún með hinum 1.203.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-9",
+      "title": "Heimkoman",
+      "image": "comics/2026-10-16-9.png",
+      "alt": "Bjarni skipar öllum aftur á skrifstofuna til að auka samvinnu; Sigrún situr þar á Teams-fundi með manneskjunni í næsta herbergi og sendir Bjarna fundarboð þegar hann spyr hvar allir séu.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Frá mánudegi eru allir aftur á skrifstofunni, til að auka samvinnu!“ Gunnar: „Við höfum unnið saman í Teams í þrjú ár.“",
+        "Rammi 2 – Sigrún: „Ég kom á skrifstofuna. Ég er á Teams-fundi með manneskjunni í næsta herbergi.“ (Skilti: Fundarherbergi 3 – Bókað: Teams-fundur.)",
+        "Rammi 3 – Bjarni: „Hvar eru allir? Ekkert heyrist!“ Sigrún: „Samvinnan blómstrar. Ég sendi þér fundarboð, Bjarni.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-10",
+      "title": "Fjölþátta auðkenning",
+      "image": "comics/2026-10-16-10.png",
+      "alt": "Hrólfur kynnir fjölþátta auðkenningu (lykilorð, kóði í síma, fingrafar) og Bjarni segist alltaf hafa allt þrennt. Hann lokast úti því síminn er heima í hleðslu, SOC-teymið æpir að einhver reyni að skrá sig inn sem Bjarni og hann reynir að útskýra plástur á fingri. Sigrún bendir á að öryggið sé loksins fullkomið: enginn kemst inn, ekki einu sinni hann.",
+      "panels": [
+        "Rammi 1 – Hrólfur (tafla: Fjölþátta auðkenning): „Ný öryggisregla: lykilorð, kóði í síma og fingrafar. Staðfest í þríriti.“ Bjarni: „Frábært! Ég er alltaf með allt þrennt!“",
+        "Rammi 2 – SOC-teymið (hangir úr loftinu): „Viðvörun! Einhver reynir að skrá sig inn sem Bjarni!“ Bjarni: „Ég ER Bjarni! Kóðinn fór í símann og síminn er heima í hleðslu!“ (Skjár: Aðgangi hafnað.)",
+        "Rammi 3 – SOC: „Ógninni var lokað úti!“ Bjarni: „Ég er með plástur. Kerfið kallar hann ‚ógn‘.“ Sigrún: „Fullkomið öryggi: enginn kemst inn – ekki einu sinni þú.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-11",
+      "title": "Sjálfvirkt svar",
+      "image": "comics/2026-10-16-11.png",
+      "alt": "Gunnar setur sjálfvirkt svar „Ég er í fríi“ en Bjarni er með eins svar; Lundi segir að sjálfvirku svörin svari hvort öðru, 40.000 pósta á einni nótt, og Sigrún segir að þau séu sammála um að vera bæði í fríi – afkastameira en fundurinn.",
+      "panels": [
+        "Rammi 1 – Gunnar: „Ég setti sjálfvirkt svar: ‚Ég er í fríi.‘“ Bjarni: „Þú ert hér! Hvað er þetta?“",
+        "Rammi 2 – Lundi: „Sjálfvirku svörin svara hvort öðru! 40.000 póstar í nótt!“ Sigrún: „Tvö sjálfvirk svör eru komin í samtal.“ (Skjár: Svar: Í fríi (Bjarni), Svar: Í fríi (Gunnar), Nýir póstar: 40.000.)",
+        "Rammi 3 – Bjarni: „Hvað segja þau?“ Sigrún: „Þau eru sammála um að vera bæði í fríi. Afkastameira en fundurinn.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-12",
+      "title": "Grunsamleg hegðun",
+      "image": "comics/2026-10-16-12.png",
+      "alt": "SOC-teymið hrópar viðvörun um grunsamlega hegðun: Gunnar hefur verið virkur í 40 mínútur samfleytt. Sigrún segir að hann sé að vinna, aðgangnum er lokað og niðurstaðan er öruggasta fyrirtæki landsins, enda enginn að gera neitt.",
+      "panels": [
+        "Rammi 1 – SOC-teymið (í kór): „Viðvörun! Grunsamleg hegðun: Notandi Gunnar hefur verið virkur í 40 mínútur samfleytt!“ Bjarni: „Er það óvenjulegt?“",
+        "Rammi 2 – Sigrún: „Hann er að vinna.“ SOC-teymið: „Lokum aðgangnum!“ (Skilti: Aðgangur: Gunnar – LOKAÐ.) Gunnar fagnar.",
+        "Rammi 3 – Bjarni: „Hvernig er staðan?“ Sigrún: „Öruggasta fyrirtæki landsins. Enginn að gera neitt.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-13",
+      "title": "Gervigreindarstefna",
+      "image": "comics/2026-10-16-13.png",
+      "alt": "Bjarni vill gervigreindarstefnu; Sigrún lét gervigreindina skrifa hana og hún samþykkti hana líka. Kafli 7 bannar að nota gervigreind til að skrifa stefnur og Sigrún segir að stefnan hafi brotið sjálfa sig.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Við þurfum gervigreindarstefnu! Hver skrifar hana?“ Sigrún: „Ég lét gervigreindina skrifa hana.“ (Skjár: Stefna.docx, 80 síður, höf.: AI.)",
+        "Rammi 2 – Gunnar: „Hver las hana?“ Sigrún: „Gervigreindin. Hún samþykkti hana líka.“ Bjarni: „Frábært! Engin mannleg aðkoma!“",
+        "Rammi 3 – (Skilti: Stefna – kafli 7: Bannað er að nota gervigreind til að skrifa stefnur.) Bjarni: „Hver braut þá stefnuna?“ Sigrún: „Stefnan. Hún braut sjálfa sig.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-14",
+      "title": "Sprettur",
+      "image": "comics/2026-10-16-14.png",
+      "alt": "Bjarni boðar að fyrirtækið vinni í sprettum sem taki tvær vikur og hlaupist hægt; Sigrún segir að sprettur sem tekur tvær vikur heiti göngutúr og Kári hrafn rukkar 60.000 kr. á tímann fyrir göngutúr með þjálfara, skór ekki innifaldir.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Við vinnum í sprettum! Agile!“ (Tafla: Sprettur 1, lengd 14 dagar.)",
+        "Rammi 2 – Gunnar: „Sprettur sem tekur tvær vikur?“ Bjarni: „Já! Og við hlaupum hægt, svo enginn þreytist.“",
+        "Rammi 3 – Sigrún: „Sprettur, sem tekur tvær vikur, heitir göngutúr.“ Kári: „Göngutúr með þjálfara: 60.000 kr. á tímann. Skór ekki innifaldir.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-15",
+      "title": "Þjónustuverið",
+      "image": "comics/2026-10-16-15.png",
+      "alt": "Bjarni fagnar að þjónustuverið leysi 98% mála á fyrstu mínútu; Sigrún útskýrir að mál teljist leyst þegar viðskiptavinurinn hættir að hringja og Lundi vill slökkva á símanum til að ná 100%. Viðskiptavinirnir leystu málið sjálfir með því að skipta um fyrirtæki.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Þjónustuverið leysir 98% mála á fyrstu mínútu!“ Gunnar: „Hvernig mælum við ‚leyst‘?“ (Skilti: Þjónustuver, leyst: 98%, tími: 1 mín.)",
+        "Rammi 2 – Sigrún: „Mál telst leyst þegar viðskiptavinurinn hættir að hringja.“ Lundi: „Við stefnum á 100%! Næst slökkvum við á símanum!“ (Skilti: Biðröð: sæti 4.000, áætluð bið: 3 vikur.)",
+        "Rammi 3 – Gunnar: „Og viðskiptavinirnir?“ Sigrún: „Þeir leystu málið sjálfir: skiptu um fyrirtæki.“ Bjarni: „Mál leyst!“ (Skilti: Viðskiptavinir, nú: 0.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-16",
+      "title": "Eyðublaðið",
+      "image": "comics/2026-10-16-16.png",
+      "alt": "Gunnar vantar nýja mús; Hrólfur krefst beiðni í þríriti sem fæst aðeins með annarri beiðni. Sigrún finnur músina í skúffu Hrólfs, samþykkta 2019, afhending í vinnslu.",
+      "panels": [
+        "Rammi 1 – Gunnar: „Mig vantar nýja mús.“ Hrólfur: „Fylltu út beiðni í þríriti.“",
+        "Rammi 2 – Gunnar: „Hvar fæ ég beiðnina?“ Hrólfur: „Þú sækir um hana með annarri beiðni.“ (Eyðublað: Beiðni A-1, sjá eyðublað A-0.)",
+        "Rammi 3 – Sigrún: „Hún lá í skúffunni þinni. Síðan 2019.“ Hrólfur: „Afhending er í vinnslu.“ (Eyðublað: Beiðni #4411, samþykkt: 2019.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-17",
+      "title": "Mælaborðið",
+      "image": "comics/2026-10-16-17.png",
+      "alt": "Kári hrafn kynnir Bjarna nýtt mælaborð sem sýnir framleiðni fyrirtækisins í rauntíma; í ljós kemur að það telur aðeins hversu oft fólk opnar mælaborðið. Notandinn er einn, Bjarni, og Sigrún óskar honum til hamingju með að vera afkastamesti starfsmaðurinn á meðan Kári réttir fram reikning upp á 4.000.000 kr.",
+      "panels": [
+        "Rammi 1 – Kári: „Nýja mælaborðið sýnir framleiðni alls fyrirtækisins í rauntíma.“ Bjarni: „Stórkostlegt! Hvernig mælir það framleiðni?“",
+        "Rammi 2 – Kári: „Það telur hversu oft fólk opnar mælaborðið.“ (Skjár: Opnanir í dag: 847, Notendur: 1, Þróun: ▲ 312 %.)",
+        "Rammi 3 – Sigrún: „Til hamingju, Bjarni. Þú ert afkastamesti starfsmaður fyrirtækisins.“ Bjarni: „Ég vissi það alltaf!“ (Kári heldur á reikningi: Mælaborð, 4.000.000 kr.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-18",
+      "title": "Hugarflug",
+      "image": "comics/2026-10-16-18.png",
+      "alt": "Bjarni heldur hugarflug þar sem engar hugmyndir eru vitlausar; Gunnar leggur til að hætta við verkefnið og Bjarni kallar það vitlausa hugmynd. Sigrún bendir á að þá séu bara vitlausir starfsmenn til og Bjarni lætur Lunda skrifa Gunnar efstan á listann.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Engar vitlausar hugmyndir hér! Allt má!“ (Tafla: Hugarflug – engar vitlausar hugmyndir.)",
+        "Rammi 2 – Gunnar: „Hættum við verkefnið.“ Bjarni: „Þetta er vitlaus hugmynd.“",
+        "Rammi 3 – Sigrún: „Engar vitlausar hugmyndir – bara vitlausir starfsmenn?“ Bjarni: „Nákvæmlega!“ (Tafla: Vitlausir starfsmenn: 1. Gunnar.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-19",
+      "title": "Útvistun",
+      "image": "comics/2026-10-16-19.png",
+      "alt": "Bjarni útvistar sparnaðarverkefninu til Kára hrafns, sem útvistar því aftur til starfsmannanna á 60.000 kr. á tímann; Sigrún bendir á að þau geri nú verkið sem átti að útvista og skýrslan sýnir sparnað upp á mínus 4 milljónir, sem Kári kallar hagræðingu.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Til að spara útvistum við sparnaðarverkefninu til Kára.“ Kári: „Kraa. Tímagjald: 60.000 kr.“",
+        "Rammi 2 – Kári: „Ég útvista því til ykkar.“ Sigrún: „Semsagt: við gerum verkið sem við vorum að útvista.“",
+        "Rammi 3 – Bjarni: „Stórkostlegt!“ Sigrún: „Mínus 4 milljónir sparaðar. Skýrslan er útvistuð til okkar.“ Kári: „Kraa. Hagræðing.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-20",
+      "title": "Þrjú hundruð og sextíu gráður",
+      "image": "comics/2026-10-16-20.png",
+      "alt": "Hrólfur kynnir 360° endurgjöf þar sem allir meta alla í þríriti. Niðurstöðurnar sýna að Snæfríður kisa fær 5,0 því hún hefur aldrei gert neitt, enginn getur kvartað yfir því sem sést ekki; Bjarni vill hækka hana í launum og Gunnar ákveður að gera ekkert frá og með mánudegi.",
+      "panels": [
+        "Rammi 1 – Hrólfur: „Ný endurgjöf: allir meta alla, í þríriti.“ Bjarni: „Ég er til í allt!“ (Skilti: 360° endurgjöf.)",
+        "Rammi 2 – Gunnar: „Snæfríður fær 5,0. Hún hefur aldrei gert neitt.“ Sigrún: „Enginn getur kvartað yfir því sem sést ekki.“ (Skjár: Niðurstöður 360°: Bjarni 5,0, Gunnar 2,1, Sigrún 4,9, Snæfríður 5,0.)",
+        "Rammi 3 – Bjarni: „Hækkum hana í launum! Hún er fullkomin!“ Gunnar: „Þá byrja ég að gera ekkert. Strax á mánudag.“ (Snæfríður sefur: Zzz.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-21",
+      "title": "Stefnan",
+      "image": "comics/2026-10-16-21.png",
+      "alt": "Snæfríður sofnar á lyklaborðinu og skrifar óvart stefnu 2027 sem er bara stafurinn j. Bjarni segir það loksins stefnu sem hann skilur og útnefnir hana stefnusmið ársins; Sigrún bendir á að þetta sé fyrsta stefnan sem allir geta fylgt: að sofa.",
+      "panels": [
+        "Rammi 1 – Sigrún: „Snæfríður sofnaði á lyklaborðinu og skrifaði stefnuna.“ Gunnar: „Hún er bara j.“ (Skjár: Stefna 2027: jjjjjjjj.)",
+        "Rammi 2 – Bjarni: „Loksins stefna sem ég skil!“ SOC-teymið í kór: „Viðvörun! Óþekkt stefna!“ (Tafla: 2027: jjjjjjjj.)",
+        "Rammi 3 – Bjarni: „Snæfríður, þú ert stefnusmiður ársins!“ Sigrún: „Fyrsta stefnan sem allir geta fylgt: að sofa.“ (Snæfríður sefur: Z z z.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-22",
+      "title": "Tímaskráningin",
+      "image": "comics/2026-10-16-22.png",
+      "alt": "Hrólfur kynnir tímaskráningarkerfi þar sem allir skrá hverja mínútu; Sigrún bendir á að skráningin taki 45 mínútur á dag og Bjarni vill þá kerfi til að skrá tímann sem fer í tímaskráninguna. Niðurstaðan: 100% skráður tími, 0% unnið – Bjarni fagnar fullkominni skráningu.",
+      "panels": [
+        "Rammi 1 – Hrólfur: „Allir skrá hér eftir hvað þeir gera á hverri mínútu!“ Gunnar: „Og hvenær á ég að vinna?“ (Skilti: Tímaskráning v2.0.)",
+        "Rammi 2 – Sigrún: „Skráningin tekur 45 mínútur á dag.“ Bjarni: „Þá þurfum við kerfi til að skrá tímann sem fer í tímaskráninguna!“",
+        "Rammi 3 – Bjarni: „Frábært! Allt fullkomlega skráð!“ Sigrún: „Fyrsta fyrirtækið með 100% skráningu og 0% vinnu.“ (Skjár: Skráður tími: 100%, unnið: 0%, framleiðni: núll.)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-23",
+      "title": "Raunveruleg ógn",
+      "image": "comics/2026-10-16-23.png",
+      "alt": "SOC-teymið hangir úr loftljósinu með 11.482 viðvaranir; Sigrún spyr hver þeirra hafi verið raunveruleg. Innskráning stjórnanda frá Pyongyang kl. 03:12 var flokkuð sem „Bjarni á ferðalagi“ – en lykilorð Bjarna er Bjarni123 og þeir komu bara á undan honum.",
+      "panels": [
+        "Rammi 1 – SOC-teymið í kór: „11.482 viðvaranir í nótt!“ Sigrún: „Og hver þeirra var raunveruleg?“",
+        "Rammi 2 – (Skjár: Lundi vistaði skjal, Snæfríður snerti lyklaborð, Hrólfur prentaði, admin innskráður frá Pyongyang 03:12 – forgangur: lágur.) Sigrún: „Admin frá Pyongyang kl. 03:12?“ SOC: „Flokkað: Bjarni á ferðalagi.“",
+        "Rammi 3 – Bjarni: „Ég hef aldrei komið til Pyongyang!“ Sigrún: „Lykilorðið þitt er Bjarni123. Þeir komu bara á undan þér.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-24",
+      "title": "Starfslýsingin",
+      "image": "comics/2026-10-16-24.png",
+      "alt": "Hrólfur afhendir Gunnari þriggja blaðsíðna starfslýsingu; Sigrún bendir á að liðir 1–14 séu allir „Önnur tilfallandi verkefni“. Lundi tekur að sér allt tilfallandi, Gunnar á þá ekkert starf og Sigrún segir starfslýsinguna loksins rétta.",
+      "panels": [
+        "Rammi 1 – Hrólfur: „Starfslýsing Gunnars, í þríriti. Þrjár blaðsíður!“ Gunnar: „Hvað felst starfið mitt eiginlega í?“",
+        "Rammi 2 – Sigrún: „Ég las hana. Liðir 1 til 14: Önnur tilfallandi verkefni.“ Bjarni: „Skýrt og afmarkað!“ (Skilti: liðir 1–14 og 15: Önnur tilfallandi verkefni.)",
+        "Rammi 3 – Lundi: „Ég tek að mér allt tilfallandi!“ Gunnar: „Þá á ég ekkert starf.“ Sigrún: „Nú er starfslýsingin loksins rétt.“"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "id": "2026-10-16-25",
+      "title": "Innbrotsprófið",
+      "image": "comics/2026-10-16-25.png",
+      "alt": "Kári hrafn gerir innbrotspróf og kemst inn á 4 mínútum; SOC-teymið vaktaði hann allan tímann en sá ekkert. Lundi hafði boðist til að bera tölvuna hans inn og Sigrún segir veikasta hlekkinn vera metnað.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Kári gerði innbrotspróf. Niðurstaða?“ Kári: „Krá! Ég komst inn á 4 mínútum.“",
+        "Rammi 2 – Sigrún: „Þið vöktuðuð hann. Hann sat í anddyrinu í vesti merktu ‚Innbrotspróf‘.“ SOC-teymið: „Við sáum ekkert! Heyrðum ekkert!“",
+        "Rammi 3 – Gunnar: „Hvernig komst hann inn?“ Lundi: „Ég bauðst til að bera tölvuna hans!“ Sigrún: „Veikasti hlekkurinn er metnaður.“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "title": "Fimm sinnum af hverju",
+      "image": "comics/2026-10-17.png",
+      "alt": "Rótarorsakagreining eftir sex tíma kerfisbilun: Sigrún spyr „af hverju“ fimm sinnum og fimmta svarið er Bjarni; Bjarni bannar að spyrja oftar en fjórum sinnum.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Hver ber ábyrgð á að kerfið lá niðri?“ Gunnar: „Ég ýtti á „uppfæra“ eins og tilkynningin bað um.“",
+        "Rammi 2 – Tafla: 1. Kerfið lá niðri, 2. Uppfærsla óprófuð, 3. Engin prófunarumhverfi, 4. Sparnaðarátak 2025, 5. ____. Sigrún: „Fjögur svör komin. Fimmta er alltaf óþægilegust.“ Gunnar: „Ó nei.“",
+        "Rammi 3 – Sigrún: „Svar fimm: Bjarni. Alltaf.“ Bjarni: „Þá er ákveðið: bannað að spyrja „af hverju“ oftar en fjórum sinnum.“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-2",
+      "title": "Flatt skipurit",
+      "image": "comics/2026-10-17-2.png",
+      "alt": "Bjarni kynnir flatt skipurit þar sem allir eru jafnir en er samt efstur; Sigrún leggur skipuritið á hliðina og þá er það „flatt“, með Bjarna enn fremstan.",
+      "panels": [
+        "Rammi 1 – Skipurit 2027 á töflu. Bjarni: „Frá og með deginum í dag er skipuritið flatt. Allir eru jafnir!“",
+        "Rammi 2 – Gunnar: „Þú ert samt efst á því.“ Bjarni: „Svona er þetta bara á teikningunni!“",
+        "Rammi 3 – Skipuritið lagt á hliðina. Sigrún: „Núna er það flatt. Sama skipurit, lagt á hliðina.“ Bjarni: „Og ég er enn fremstur!“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-3",
+      "title": "Stjórnandaréttindi",
+      "image": "comics/2026-10-17-3.png",
+      "alt": "SOC-apar í loftljósi æpa viðvörun um nýjan notanda með stjórnandaréttindi; það er Bjarni, sem vill bara prenta og finnur ekki prenthnappinn. Sigrún bendir á að öruggasta kerfið sé stjórnandi sem kann ekki á það, og aparnir lækka viðvörunina í lágt.",
+      "panels": [
+        "Rammi 1 – SOC-teymið: „Viðvörun! Nýr notandi með stjórnandaréttindi!“ Bjarni: „Það er ég! Fékk þau í morgun. Ætla að prenta.“",
+        "Rammi 2 – SOC-teymið: „Hann getur eytt öllu! Lesið allt! Breytt öllu!“ Sigrún: „Hann finnur ekki prenthnappinn.“ (Skjár: Prenta? Prenthnappur: ?)",
+        "Rammi 3 – SOC-teymið: „Viðvörun lækkuð í lágt. Við sjáum ekkert.“ Bjarni: „Hvar er prenta?“ Sigrún: „Öruggasta kerfið er stjórnandi sem kann ekki á það.“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-4",
+      "title": "Ábyrgðarfylkið",
+      "image": "comics/2026-10-17-4.png",
+      "alt": "Bjarni kynnir ábyrgðarfylki þar sem allir bera ábyrgð á öllu; Gunnar bendir á að þá beri enginn ábyrgð. Sigrún finnur engan dálk fyrir „Gerir verkið“ og Hrólfur segir hann bíða eftir eyðublaði. Að lokum er Lundi R, C og I, Snæfríður sefur og er „A“, og fylkið virkar.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Hér er ábyrgðarfylkið! Allir bera ábyrgð á öllu!“ Gunnar: „Það þýðir að enginn ber ábyrgð.“",
+        "Rammi 2 – Sigrún: „Ég leitaði að dálknum „Gerir verkið“. Hann er ekki til.“ Hrólfur: „Hann bíður eftir eyðublaði.“",
+        "Rammi 3 – Sigrún: „Lundi gerir allt, Snæfríður sefur og er „A“.“ Lundi: „Ég er R, C og I!“ (Snæfríður sefur.) „Fylkið virkar!“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-5",
+      "title": "Skýrsla um skýrsluna",
+      "image": "comics/2026-10-17-5.png",
+      "alt": "Bjarni pantar skýrslu um að enginn lesi skýrslur; Kári skilar 412 blaðsíðum þar sem niðurstaðan er „Enginn les skýrslur“, Bjarni biður um samantekt og fær sömu setningu á 300.000 kr. – og Sigrún bendir á að nú lesi hana loksins einhver.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Enginn les skýrslurnar okkar. Kári, gerðu skýrslu um það.“ Kári: „Krá! 412 blaðsíður. 60.000 kr. á tímann.“",
+        "Rammi 2 – Sigrún: „Niðurstaða á bls. 411: Enginn les skýrslur.“ Gunnar: „Hver las hana þá?“ (Skjal: Skýrsla, bls. 411.)",
+        "Rammi 3 – Bjarni: „Of löng. Gerðu samantekt.“ Kári: „Krá! „Enginn les skýrslur.“ 300.000 kr.“ Sigrún: „Nú les hana loksins einhver.“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-6",
+      "title": "Sjálfsafgreiðsla",
+      "image": "comics/2026-10-17-6.png",
+      "alt": "Bjarni kynnir sjálfsafgreiðslugátt þar sem allir sækja um allt sjálfir; Hrólfur spyr hvað hann geri þá. Gunnar sækir um mús og gáttin segir honum að prenta umsóknina í þríriti og skila henni til Hrólfs. Sigrún bendir á að sjálfsafgreiðsla þýði að maður afgreiði Hrólf sjálfur.",
+      "panels": [
+        "Rammi 1 – Bjarni: „Frá og með deginum í dag sækja allir um allt sjálfir í nýju gáttinni!“ Hrólfur: „Og hvað geri ég þá?“",
+        "Rammi 2 – Gunnar: „Ég sótti um nýja mús í gáttinni.“ (Skjár: „Umsókn móttekin. Prentaðu, undirritaðu í þríriti og skilaðu til Hrólfs.“) Hrólfur: „Ég tek á móti prentuðum umsóknum.“",
+        "Rammi 3 – Sigrún: „Sjálfsafgreiðsla þýðir að þú afgreiðir Hrólf sjálfur.“ Hrólfur: „Stimpill! Þrjú eintök!“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-7",
+      "title": "Ruslpóstsían",
+      "image": "comics/2026-10-17-7.png",
+      "alt": "SOC-aparnir hanga úr loftljósinu og æpa að ruslpóstsían hafi stöðvað 9.012 pósta í nótt; Sigrún spyr hverjir þeir voru og næstum allir reynast frá Bjarna. Bjarni spyr hvers vegna enginn kom á fundinn og Sigrún svarar að ruslpóstsían sé sú eina sem les póstinn hans og hafi góðan smekk.",
+      "panels": [
+        "Rammi 1 – SOC-teymið (í kór): „Árás! Ruslpóstsían stöðvaði 9.012 pósta í nótt!“ Gunnar: „Frábært. Ég finn það ekki.“",
+        "Rammi 2 – Sigrún: „Hverjir voru þeir?“ SOC-teymið: „Næstum allir frá Bjarna!“ (Tafla: 8.998 × Bjarni, 11 × Nígeríuprins, 1 × Fundarboð um fundarboð.)",
+        "Rammi 3 – Bjarni: „Af hverju kom enginn á fundinn?“ Sigrún: „Hún er eina sem les póstinn þinn. Og hún hefur góðan smekk.“"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "id": "2026-10-17-8",
+      "title": "Heyrnartólsdagurinn",
+      "image": "comics/2026-10-17-8.png",
+      "alt": "Bjarni skipar öllum aftur á skrifstofuna til að efla teymisandann; allir sitja þar með heyrnartól á Teams-fundum. Gunnar er á Teams-fundi með Sigrúnu, sem situr við hliðina á honum, og spyr hvort heyrist vel í sér.",
+      "panels": [
+        "Rammi 1 – Bjarni (við töflu: „Aftur á skrifstofuna!“): „Frá mánudegi mæta allir á skrifstofuna til að efla teymisandann!“ Gunnar: „Og hvar eigum við að vinna?“",
+        "Rammi 2 – Lundi: „Teams-fundur hefst eftir tvær mínútur!“ Hrólfur: „Allir eru mættir. Í sama rými. Með heyrnartól.“ (Snæfríður sefur á lyklaborðinu.)",
+        "Rammi 3 – Bjarni: „Af hverju sitjið þið öll með heyrnartól?“ Gunnar: „Ég er á Teams-fundi með Sigrúnu. Hún situr við hliðina á mér.“ Sigrún: „Heyrist vel í mér?“"
+      ]
+    }
+  ]
+}

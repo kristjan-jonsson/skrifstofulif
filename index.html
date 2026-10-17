@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skrifstofulífið</title>
+<meta name="description" content="Dagleg skrýtla úr skrifstofulífinu – ný myndasaga alla daga.">
+<meta name="author" content="Kristján Jónsson">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='4' y='10' width='56' height='44' rx='6' fill='%23f4c430' stroke='%23222' stroke-width='4'/><path d='M22 10v44M42 10v44' stroke='%23222' stroke-width='4'/></svg>">
+<style>
+  :root {
+    --bg: #f6f3ec;
+    --paper: #ffffff;
+    --ink: #1d1d1f;
+    --muted: #6b6760;
+    --line: #d9d3c7;
+    --accent: #c8102e;
+    --accent-ink: #ffffff;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17171a; --paper: #222226; --ink: #ecebe8; --muted: #a29e96;
+      --line: #36363b; --accent: #ff5a6e; --accent-ink: #17171a;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17171a; --paper: #222226; --ink: #ecebe8; --muted: #a29e96;
+    --line: #36363b; --accent: #ff5a6e; --accent-ink: #17171a;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 32px 0 16px; border-bottom: 3px solid var(--ink); }
+  .masthead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  h1 { margin: 0; font-size: clamp(28px, 6vw, 48px); letter-spacing: .04em; font-weight: 900; line-height: 1; }
+  .tag { color: var(--muted); font-size: 15px; }
+  main { padding: 24px 0 48px; }
+  .strip {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: var(--shadow); padding: 16px; margin: 0;
+  }
+  .strip-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .strip-title { margin: 0; font-size: 20px; }
+  .strip-date { color: var(--muted); font-size: 14px; }
+  .strip img { display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
+  .viewport a { display: block; position: relative; }
+  .snap, .frame-dots { display: none; }
+
+  /* Farsími á langveginn: skrýtlan þrisvar sinnum breiðari, flett einum ramma í einu */
+  @media (max-width: 720px) and (orientation: portrait) {
+    .strip { padding: 12px 8px; }
+    .viewport {
+      overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+      scrollbar-width: none; border-radius: 4px;
+    }
+    .viewport::-webkit-scrollbar { display: none; }
+    .viewport a { width: 300%; }
+    .snap { display: block; position: absolute; top: 0; bottom: 0; width: 33.333%; scroll-snap-align: start; pointer-events: none; }
+    .snap:nth-child(2) { left: 0; }
+    .snap:nth-child(3) { left: 33.333%; }
+    .snap:nth-child(4) { left: 66.667%; }
+    .frame-dots { display: flex; justify-content: center; gap: 4px; margin-top: 8px; }
+    .frame-dots button {
+      appearance: none; border: 0; background: none; padding: 8px; cursor: pointer;
+    }
+    .frame-dots button::before {
+      content: ""; display: block; width: 8px; height: 8px; border-radius: 50%; background: var(--line);
+    }
+    .frame-dots button[aria-current="true"]::before { background: var(--accent); }
+  }
+  .nav { display: flex; gap: 8px; justify-content: center; margin: 16px 0 0; flex-wrap: wrap; }
+  .btn {
+    appearance: none; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    padding: 8px 14px; border-radius: 999px; font: inherit; font-size: 14px; cursor: pointer; text-decoration: none;
+  }
+  .btn:hover:not([disabled]) { border-color: var(--ink); }
+  .btn[disabled] { opacity: .4; cursor: default; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .votes { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+  .votes .btn[hidden] { display: none; }
+  .votes .share { display: inline-flex; align-items: center; gap: 6px; }
+  .votes .share svg { width: 1em; height: 1em; }
+  .votes .btn[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); opacity: 1; font-weight: 700; }
+
+  /* Placeholder */
+  .placeholder { text-align: center; padding: 32px 16px 40px; }
+  .panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 720px; margin: 0 auto 24px; }
+  .panel {
+    aspect-ratio: 4 / 3; border: 3px solid var(--ink); border-radius: 4px; background: var(--bg);
+    display: grid; place-items: center; font-weight: 800; font-size: clamp(18px, 4vw, 32px); color: var(--muted);
+  }
+  .panel:nth-child(2) { animation: blink 2.4s ease-in-out infinite; }
+  @keyframes blink { 50% { opacity: .35; } }
+  @media (prefers-reduced-motion: reduce) { .panel:nth-child(2) { animation: none; } }
+  .placeholder h2 { margin: 0 0 8px; font-size: 24px; }
+  .placeholder p { margin: 0 auto; max-width: 52ch; color: var(--muted); }
+
+  .archive h2 { font-size: 18px; margin: 0 0 12px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  .archive { margin-top: 40px; }
+  .archive ul { list-style: none; padding: 0; margin: 0; columns: 2 260px; }
+  .archive li { padding: 4px 0; break-inside: avoid; }
+  .archive a { color: var(--ink); }
+  .archive a[aria-current="true"] { color: var(--accent); font-weight: 700; }
+  .archive time { color: var(--muted); font-size: 13px; margin-right: 6px; }
+  footer { border-top: 1px solid var(--line); padding: 16px 0 32px; color: var(--muted); font-size: 13px; }
+  footer a { color: inherit; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap masthead">
+    <h1>Skrifstofulíf</h1>
+    <span class="tag">Dagleg skrýtla · ný myndasaga alla morgna kl. 07:20</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="empty" class="strip placeholder" hidden>
+    <div class="panels" aria-hidden="true">
+      <div class="panel">…</div><div class="panel">?</div><div class="panel">!</div>
+    </div>
+    <h2>Fyrsta skrýtlan er í vinnslu</h2>
+    <p>Bjarni er enn að skilgreina stefnumótun skrýtlunnar, Hrólfur bíður eftir eyðublaði í þríriti og Snæfríður sefur á lyklaborðinu. Kíktu aftur í fyrramálið.</p>
+  </section>
+
+  <figure id="strip" class="strip" hidden>
+    <div class="strip-head">
+      <h2 class="strip-title" id="title"></h2>
+      <span class="strip-date" id="date"></span>
+    </div>
+    <div class="viewport" id="viewport">
+      <a id="imglink" target="_blank" rel="noopener"><img id="img" alt=""><span class="snap"></span><span class="snap"></span><span class="snap"></span></a>
+    </div>
+    <div class="frame-dots" id="frame-dots" aria-label="Rammar">
+      <button aria-label="Rammi 1" aria-current="true"></button><button aria-label="Rammi 2"></button><button aria-label="Rammi 3"></button>
+    </div>
+    <div class="votes" id="votes">
+      <button class="btn" id="vote-up" hidden aria-pressed="false" aria-label="Fyndið">👍 <span id="count-up"></span></button>
+      <button class="btn" id="vote-down" hidden aria-pressed="false" aria-label="Ekki fyndið">👎 <span id="count-down"></span></button>
+      <button class="btn share" id="share" aria-label="Deila skrýtlu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span id="share-label">Deila</span></button>
+    </div>
+  </figure>
+
+  <nav class="nav" id="nav" hidden aria-label="Fletta skrýtlum">
+    <button class="btn" id="first">« Fyrsta</button>
+    <button class="btn" id="prev">‹ Fyrri</button>
+    <button class="btn" id="random">Handahófs</button>
+    <button class="btn" id="next">Næsta ›</button>
+    <button class="btn primary" id="latest">Nýjasta »</button>
+  </nav>
+
+  <section class="archive" id="archive" hidden>
+    <h2>Safnið</h2>
+    <ul id="archive-list"></ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Skrifstofulíf · Allar persónur eru skáldaðar og öll líkindi við raunveruleikann er tilviljun. Skrýtlur eru framleiddar af gervigreind og óritskoðaðar.<br>© 2026 Kristján Jónsson · <a href="LICENSE">CC BY 4.0</a> · <a href="feed.xml">RSS</a></div>
+</footer>
+
+<script>
+(function () {
+  const DAYS = ['sunnudagur','mánudagur','þriðjudagur','miðvikudagur','fimmtudagur','föstudagur','laugardagur'];
+  const MONTHS = ['janúar','febrúar','mars','apríl','maí','júní','júlí','ágúst','september','október','nóvember','desember'];
+  const $ = id => document.getElementById(id);
+  const key = c => c.id || c.date;
+
+  // Slóð Cloudflare Worker (sjá voting-setup.md). Tómt = atkvæðahnappar faldir.
+  const VOTE_URL = 'https://skrifstofulif-vote.kristjan06.workers.dev';
+  const VOTES_JSON = 'https://raw.githubusercontent.com/kristjan-jonsson/skrifstofulif/votes/votes.json';
+  let votes = {};
+
+  function fmtDate(iso) {
+    const [y, m, d] = iso.split('-').map(Number);
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    return `${DAYS[dt.getUTCDay()]} ${d}. ${MONTHS[m - 1]} ${y}`;
+  }
+
+  let comics = [];
+  let idx = -1;
+
+  function show(i) {
+    if (i < 0 || i >= comics.length) return;
+    idx = i;
+    const c = comics[i];
+    $('title').textContent = c.title || 'Skrifstofulífið';
+    $('date').textContent = fmtDate(c.date);
+    $('img').src = c.image;
+    $('img').alt = c.alt || `Skrifstofulífið ${fmtDate(c.date)}: ${c.title || ''}`;
+    $('imglink').href = c.image;
+    $('viewport').scrollLeft = 0;
+    $('first').disabled = $('prev').disabled = i === 0;
+    $('next').disabled = $('latest').disabled = i === comics.length - 1;
+    $('random').disabled = comics.length < 2;
+    document.querySelectorAll('#archive-list a').forEach(a =>
+      a.setAttribute('aria-current', a.dataset.key === key(c) ? 'true' : 'false'));
+    if (location.hash.slice(1) !== key(c)) history.replaceState(null, '', '#' + key(c));
+    document.title = `Skrifstofulífið – ${c.title || fmtDate(c.date)}`;
+    renderVotes();
+  }
+
+  function myVote(k) {
+    try { return localStorage.getItem('vote:' + k); } catch { return null; }
+  }
+
+  function renderVotes() {
+    if (!VOTE_URL || idx < 0) return;
+    const k = key(comics[idx]);
+    const v = votes[k] || {};
+    const mine = myVote(k);
+    $('count-up').textContent = v.up || 0;
+    $('count-down').textContent = v.down || 0;
+    $('vote-up').setAttribute('aria-pressed', mine === 'up' ? 'true' : 'false');
+    $('vote-down').setAttribute('aria-pressed', mine === 'down' ? 'true' : 'false');
+  }
+
+  // Smellt á annan hnapp = skipta um atkvæði, smellt aftur á sama = draga atkvæði til baka
+  function castVote(clicked) {
+    const k = key(comics[idx]);
+    const prev = myVote(k) || 'none';
+    const vote = clicked === prev ? 'none' : clicked;
+    try {
+      if (vote === 'none') localStorage.removeItem('vote:' + k);
+      else localStorage.setItem('vote:' + k, vote);
+    } catch {}
+    const v = votes[k] = votes[k] || {};
+    if (prev !== 'none') v[prev] = Math.max(0, (v[prev] || 0) - 1);
+    if (vote !== 'none') v[vote] = (v[vote] || 0) + 1;
+    renderVotes();
+    fetch(VOTE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: k, vote, prev })
+    }).catch(() => {});
+  }
+
+  function shareComic() {
+    if (idx < 0) return;
+    const c = comics[idx];
+    const url = location.origin + location.pathname.replace(/[^/]*$/, '') + 's/' + key(c) + '/';
+    const title = `Skrifstofulífið – ${c.title || fmtDate(c.date)}`;
+    if (navigator.share) {
+      navigator.share({ title, url }).catch(() => {});
+      return;
+    }
+    const done = ok => {
+      $('share-label').textContent = ok ? 'Slóð afrituð!' : 'Tókst ekki að afrita';
+      setTimeout(() => { $('share-label').textContent = 'Deila'; }, 2000);
+    };
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(() => done(true), () => done(false));
+    else done(false);
+  }
+
+  function renderArchive() {
+    const ul = $('archive-list');
+    ul.replaceChildren();
+    comics.slice().reverse().forEach(c => {
+      const li = document.createElement('li');
+      const t = document.createElement('time');
+      t.dateTime = c.date;
+      t.textContent = c.date;
+      const a = document.createElement('a');
+      a.href = '#' + key(c);
+      a.dataset.key = key(c);
+      a.textContent = c.title || fmtDate(c.date);
+      li.append(t, a);
+      ul.appendChild(li);
+    });
+    $('archive').hidden = comics.length < 2;
+  }
+
+  function fromHash() {
+    const h = location.hash.slice(1);
+    const i = comics.findIndex(c => key(c) === h);
+    show(i >= 0 ? i : comics.length - 1);
+  }
+
+  $('first').onclick = () => show(0);
+  $('prev').onclick = () => show(idx - 1);
+  $('next').onclick = () => show(idx + 1);
+  $('latest').onclick = () => show(comics.length - 1);
+  $('random').onclick = () => {
+    let r; do { r = Math.floor(Math.random() * comics.length); } while (comics.length > 1 && r === idx);
+    show(r);
+  };
+  const vp = $('viewport');
+  const dots = [...$('frame-dots').children];
+  vp.addEventListener('scroll', () => {
+    const f = Math.round(vp.scrollLeft / vp.clientWidth);
+    dots.forEach((d, i) => d.setAttribute('aria-current', i === f ? 'true' : 'false'));
+  }, { passive: true });
+  dots.forEach((d, i) => d.onclick = () => vp.scrollTo({ left: i * vp.clientWidth, behavior: 'smooth' }));
+  $('vote-up').onclick = () => castVote('up');
+  $('vote-down').onclick = () => castVote('down');
+  $('share').onclick = shareComic;
+  window.addEventListener('hashchange', fromHash);
+  document.addEventListener('keydown', e => {
+    if (!comics.length) return;
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
+
+  fetch('comics.json', { cache: 'no-cache' })
+    .then(r => r.ok ? r.json() : { comics: [] })
+    .catch(() => ({ comics: [] }))
+    .then(data => {
+      comics = (data.comics || [])
+        .filter(c => c && c.date && c.image)
+        .sort((a, b) => a.date.localeCompare(b.date) || key(a).localeCompare(key(b), undefined, { numeric: true }));
+      if (!comics.length) { $('empty').hidden = false; return; }
+      $('strip').hidden = false;
+      $('nav').hidden = false;
+      renderArchive();
+      fromHash();
+      if (VOTE_URL) {
+        $('vote-up').hidden = $('vote-down').hidden = false;
+        fetch(VOTES_JSON, { cache: 'no-cache' })
+          .then(r => r.ok ? r.json() : {})
+          .catch(() => ({}))
+          .then(data => {
+            // Halda staðbundnum atkvæðum sem eru ekki enn komin í skrána
+            data = data || {};
+            Object.keys(votes).forEach(k => { if (!data[k]) data[k] = votes[k]; });
+            votes = data;
+            renderVotes();
+          });
+      }
+    });
+})();
+</script>
+</body>
+</html>
