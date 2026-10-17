@@ -6,7 +6,7 @@ Engar spurningar – enginn er við; taktu skynsamlegar ákvarðanir.
 
 ## Markmið
 
-Góð brandarateikning (3 ramma myndasaga) á íslensku með húmor í anda Dilbert: skrifstofuháð, fáránleiki fyrirtækjamenningar, fundir, ráðgjafar, gervigreind, ferlar og eyðublöð, upplýsingatækni, bankar o.fl. Metnaðarfullar myndir OG metnaðarfullir brandarar.
+Góð brandarateikning (3 ramma myndasaga) á íslensku með húmor í anda Dilbert: skrifstofuháð, fáránleiki fyrirtækjamenningar, fundir, ráðgjafar, gervigreind, ferlar, upplýsingatækni, bankar o.fl. Metnaðarfullar myndir OG metnaðarfullir brandarar.
 
 ## Föst persónuskrá
 
@@ -16,10 +16,10 @@ Upprunalegar persónur, hver með sinn metnað. Notaðu ekki Dilbert eða aðrar
 - **Gunnar starfsmaður:** gleraugu, brúnt hár, blá skyrta. Kaldhæðinn, þreyttur, segir það sem enginn vill heyra.
 - **Kári hrafn:** ráðgjafi í dökkum jakkafötum með grænblátt bindi. Vill selja sem flest tímabil, rukkar fyrir augljósa hluti.
 - **Snæfríður kisa** (appelsínugul): stefnir á yfirarkitekt, sefur helst á lyklaborðinu, vaknar aðeins til að eigna sér heiðurinn.
-- **Hrólfur sauður** (hvít ull, gleraugu): mannauðsmál, fylgir verkferlum í blindni, vill eyðublað í þríriti fyrir allt.
+- **Hrólfur sauður** (hvít ull, gleraugu): mannauðsmál, fylgir verkferlum í blindni, vill vísar í staðla ISO, PCI og fleira.
 - **Lundi nemi** (svartur/hvítur með appelsínugult nef): ofurmetnaðarfullur, tekur að sér allt sem enginn vill, skrifar fundargerðir.
-- **Sigrún sérfræðingur:** rautt hár í snúð með blýanti stungnum í gegn, græn blússa, litlir gulleyrnalokkar, oft með kaffibolla eða fartölvu undir hendinni. Klárasta manneskjan á staðnum og bráðfyndin. Er alltaf vel með á nótunum, sér í gegnum tískuorð og ráðgjafabull á augabragði og hefur oftast leyst málið áður en fundurinn byrjar. Húmorinn hennar er hnyttinn og þurr, ólíkt þreyttri kaldhæðni Gunnars. Hún tapar sjaldan og fær gjarnan beittustu línuna eða punchline-ið. Tekur virkan þátt í brandaranum og er aldrei bara skraut eða skotspónn.
-- **SOC-teymið:** þrír brúnir apar með ljós andlit og stór eyru, alltaf þrír saman og klesstir hver upp að öðrum eins og ein heild. Allir með heyrnartól og hettupeysur í sama lit (dökkgrátt, „SOC“ á bringunni). Þeir þurfa ekki að standa á gólfinu: þeir hanga úr loftljósinu eða kapalstiganum á skottinu, sitja hver á öxlum annars, kíkja yfir skilrúm eða troðast saman í einum skrifstofustól. Vakta skjái með viðvörunum allan sólarhringinn, tala oft í kór eða klára setningar hver fyrir annan og sjá ógnir alls staðar, nema þá sem raunverulega er í gangi. Stundum í stellingunni „sjá ekkert, heyra ekkert, segja ekkert“, en þá helst með nýjum snúningi.
+- **Sigrún sérfræðingur:** rautt hár í snúð með blýanti stungnum í gegn, græn blússa, oft með kaffibolla. Veit alltaf betur og lætur alla vita af því, leysir vandamál sem enginn bað um að leysa og drukknar í eigin litakóðuðu Excel-skjölum.
+- **SOC-teymið:** þrír brúnir apar með ljós andlit og stór eyru, alltaf þrír saman, með heyrnartól og dökkgráar hettupeysur („SOC“ á bringunni). Vakta öryggisviðvaranir. **Notaðu SOC-teymið sparlega:** í mesta lagi í einum af hverjum 10 bröndurum, aldrei í tveimur í röð, og aðeins þegar brandarinn snýst um öryggismál og virkar ekki án þeirra. Skoðaðu `comics.json` áður. Ekki endurnýta „sjá ógnir alls staðar nema þá raunverulegu“ eða „sjá ekkert, heyra ekkert, segja ekkert“; finndu nýjan vinkil.
 
 Ekki nota allar í hverjum brandara; veldu þær sem henta. Stundum aðeins 1–2, stundum hópsena. Bættu við nýjum aukapersónum (t.d. önnur dýr) af og til.
 
